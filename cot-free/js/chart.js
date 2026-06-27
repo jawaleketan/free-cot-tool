@@ -109,15 +109,25 @@ function updateChart(marketId, reportType) {
     try {
       if (clean.length > 0) {
         series.setData(clean);
+      } else if (data && data.length > 0) {
+        // All data was filtered out - log diagnostics
+        console.warn('Chart ' + label + ': all ' + data.length + ' points filtered, sample:', JSON.stringify(data[0]).slice(0, 100));
       }
     } catch (e) {
-      console.warn('Chart ' + label + ' error:', e.message, 'data:', JSON.stringify(clean).slice(0, 200));
+      console.warn('Chart ' + label + ' error:', e.message, 'first point:', JSON.stringify(clean[0] || data[0]).slice(0, 100));
     }
   }
 
   safeSetData(netPositionSeries, getChartData(marketId, reportType, 'category'), 'netPosition');
   safeSetData(nonCategorySeries, getChartData(marketId, reportType, 'nonCategory'), 'nonCategory');
   safeSetData(priceSeries, getPriceHistory(marketId), 'price');
+
+  // Diagnostic: log sample of raw chart data
+  const rawCat = getChartData(marketId, reportType, 'category');
+  if (rawCat.length > 0) {
+    const nonNull = rawCat.filter(d => d && d.value != null);
+    console.log('Chart data for ' + marketId + '/' + reportType + ': ' + rawCat.length + ' pts, ' + nonNull.length + ' valid, sample:', JSON.stringify(rawCat.slice(0, 3)));
+  }
 
   // Update series titles based on report type
   const catLabels = {
