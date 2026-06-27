@@ -22,7 +22,7 @@ function selectMarket(marketId) {
   if (!market) return;
 
   updateMarketDashboard(market);
-  updateChart(marketId, activeReportType);
+  setChartData(marketId, activeReportType);
 
   // Highlight selected row in screener
   document.querySelectorAll('.screener-row').forEach(r => {
