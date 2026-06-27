@@ -10,10 +10,11 @@
 let chart = null;
 let series = {};
 
-// Suppress the async "Value is null" error thrown inside
-// Lightweight Charts' internal rAF rendering pipeline.
-// We catch it here because try/catch around setData() can't
-// intercept errors thrown in a different call stack (rAF).
+// Lightweight Charts v5 internally throws 'Value is null' during its async rAF
+// rendering pipeline. try/catch around setData() can't intercept errors thrown
+// in a different call stack (rAF). The error is harmless — the chart renders
+// normally despite it. e.preventDefault() stops the browser error dialog;
+// DevTools console output cannot be suppressed from JS.
 window.addEventListener('error', function suppressNullError(e) {
   if (e.message === 'Value is null' || (e.error && e.error.message === 'Value is null')) {
     e.preventDefault();
@@ -95,7 +96,7 @@ function setChartData(marketId, reportType) {
 
   sets.forEach(([s, data]) => {
     if (!s || data.length === 0) return;
-    try { s.setData(data); } catch (e) { /* suppressed */ }
+    try { s.setData(data); } catch (e) { console.warn('Chart setData error:', e?.message); }
   });
 
   // Update labels
