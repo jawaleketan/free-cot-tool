@@ -1,0 +1,55 @@
+name: CFTC Data Pipeline
+
+on:
+  schedule:
+    # Run every Friday at 4:00 PM ET year-round (CFTC releases data at 3:30 PM ET)
+    # 21:00 UTC = 5:00 PM EDT / 4:00 PM EST — always 30+ min after release
+    - cron: '0 21 * * 5'
+  workflow_dispatch:  # Allow manual trigger
+    inputs:
+      year:
+        description: 'Year to fetch (default: current)'
+        required: false
+        default: ''
+      force:
+        description: 'Force re-download even if data exists'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write  # Needed to commit the updated data file
+
+jobs:
+  fetch-and-parse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run CFTC data pipeline
+        run: node cot-free/scripts/fetch-cftc-data.js --output cot-free/data/cftc-data.json
+        env:
+          YEAR: ${{ github.event.inputs.year || '' }}
+
+      - name: Check if data was updated
+        id: data-check
+        run: |
+          if git diff --quiet -- cot-free/data/cftc-data.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push updated data
+        if: steps.data-check.outputs.changed == 'true'
+        run: |
+          git config user.name "COT Free Pipeline"
+          git config user.email "bot@cotfree.app"
+          git add cot-free/data/cftc-data.json
+          git commit -m "chore(data): update CFTC COT data $(date +%Y-%m-%d)"
+          git push
