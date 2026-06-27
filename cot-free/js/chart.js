@@ -102,15 +102,22 @@ function updateChart(marketId, reportType) {
   if (!chart || !netPositionSeries || !nonCategorySeries || !priceSeries) return;
 
   // Safety filter: Lightweight Charts throws if any value or time is null
-  const safe = (data) => (data || []).filter(d => d != null && d.value != null && d.time != null);
+  const safe = (data) => (data || []).filter(d => d && typeof d === 'object' && d.value != null && d.time != null);
 
-  const catData = safe(getChartData(marketId, reportType, 'category'));
-  const nonCatData = safe(getChartData(marketId, reportType, 'nonCategory'));
-  const priceData = safe(getPriceHistory(marketId));
+  function safeSetData(series, data, label) {
+    const clean = safe(data);
+    try {
+      if (clean.length > 0) {
+        series.setData(clean);
+      }
+    } catch (e) {
+      console.warn('Chart ' + label + ' error:', e.message, 'data:', JSON.stringify(clean).slice(0, 200));
+    }
+  }
 
-  if (catData.length > 0) netPositionSeries.setData(catData);
-  if (nonCatData.length > 0) nonCategorySeries.setData(nonCatData);
-  if (priceData.length > 0) priceSeries.setData(priceData);
+  safeSetData(netPositionSeries, getChartData(marketId, reportType, 'category'), 'netPosition');
+  safeSetData(nonCategorySeries, getChartData(marketId, reportType, 'nonCategory'), 'nonCategory');
+  safeSetData(priceSeries, getPriceHistory(marketId), 'price');
 
   // Update series titles based on report type
   const catLabels = {
