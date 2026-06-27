@@ -1,0 +1,9 @@
+{
+  "name": "COT Free",
+  "short_name": "COT Free",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0a0e17",
+  "theme_color": "#0a0e17",
+  "icons": []
+}

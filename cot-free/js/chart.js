@@ -101,13 +101,16 @@ function initChart(containerId) {
 function updateChart(marketId, reportType) {
   if (!chart || !netPositionSeries || !nonCategorySeries || !priceSeries) return;
 
-  const catData = getChartData(marketId, reportType, 'category');
-  const nonCatData = getChartData(marketId, reportType, 'nonCategory');
-  const priceData = getPriceHistory(marketId);
+  // Safety filter: Lightweight Charts throws if any value or time is null
+  const safe = (data) => (data || []).filter(d => d != null && d.value != null && d.time != null);
 
-  netPositionSeries.setData(catData);
-  nonCategorySeries.setData(nonCatData);
-  priceSeries.setData(priceData);
+  const catData = safe(getChartData(marketId, reportType, 'category'));
+  const nonCatData = safe(getChartData(marketId, reportType, 'nonCategory'));
+  const priceData = safe(getPriceHistory(marketId));
+
+  if (catData.length > 0) netPositionSeries.setData(catData);
+  if (nonCatData.length > 0) nonCategorySeries.setData(nonCatData);
+  if (priceData.length > 0) priceSeries.setData(priceData);
 
   // Update series titles based on report type
   const catLabels = {
