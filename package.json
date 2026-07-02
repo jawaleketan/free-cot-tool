@@ -1,0 +1,20 @@
+{
+  "name": "cot-free",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Commitment of Traders (COT) data visualization tool",
+  "scripts": {
+    "start": "http-server cot-free -p 8080 -c-1",
+    "serve": "http-server cot-free -p 8080 -c-1",
+    "lint": "eslint cot-free/",
+    "lint:fix": "eslint cot-free/ --fix",
+    "format": "prettier --write cot-free/",
+    "format:check": "prettier --check cot-free/",
+    "fetch-data": "node cot-free/scripts/fetch-cftc-data.js"
+  },
+  "devDependencies": {
+    "eslint": "^9.22.0",
+    "http-server": "^14.1.1",
+    "prettier": "^3.5.0"
+  }
+}

@@ -1,119 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COT Free — Commitment of Traders Visualization</title>
-  <meta name="description" content="Free, open-source Commitment of Traders (COT) data visualization tool. Track institutional positioning in futures markets.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#0a0e17">
-  <link rel="stylesheet" href="css/style.css?v=2">
-</head>
-<body>
-
-  <!-- Header -->
-  <header class="app-header">
-    <div class="app-logo">
-      COT FREE
-      <span class="app-logo-sub">visualizer</span>
-    </div>
-
-    <div class="search-container">
-      <span class="search-icon">🔍</span>
-      <input id="search-input" type="text" placeholder="Search markets (Ctrl+K or /)" autocomplete="off">
-      <span class="search-shortcut">Ctrl+K</span>
-      <div id="search-results" class="search-results"></div>
-    </div>
-
-    <div class="report-toggle">
-      <button class="report-btn active" data-report="legacy">Legacy</button>
-      <button class="report-btn" data-report="disaggregated">Disaggregated</button>
-      <button class="report-btn" data-report="tff">TFF</button>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <div class="app-main">
-    <!-- Dashboard Panel -->
-    <div class="dashboard-panel">
-      <div class="market-header">
-        <h1 id="market-title" class="market-title">Gold (GC)</h1>
-        <span id="market-category" class="market-meta">Metal</span>
-        <span id="market-exchange" class="market-meta">COMEX</span>
-      </div>
-      <div id="report-date" class="report-date">Report: 2026-W20</div>
-
-      <!-- Extreme badge -->
-      <div id="extreme-badge" class="extreme-badge"></div>
-
-      <!-- Stats -->
-      <div class="stats-grid">
-        <div class="stat-card" id="stat-net-position">
-          <span class="stat-value" style="color: #22c55e">+125,000</span>
-          <span class="stat-label">Commercial Net</span>
-        </div>
-        <div class="stat-card" id="stat-noncomm-net">
-          <span class="stat-value">-85,000</span>
-          <span class="stat-label">Speculator Net</span>
-        </div>
-        <div class="stat-card" id="stat-wow">
-          <span class="stat-value" style="color: #22c55e">▲ +12,500</span>
-          <span class="stat-label">WoW Change</span>
-        </div>
-        <div class="stat-card" id="stat-open-interest">
-          <span class="stat-value">850K</span>
-          <span class="stat-label">Open Interest</span>
-        </div>
-        <div class="stat-card" id="stat-percentile">
-          <span class="stat-value">92/100</span>
-          <span class="stat-label">52-Week Percentile</span>
-        </div>
-        <div class="stat-card" id="stat-pct-oi">
-          <span class="stat-value">14.7%</span>
-          <span class="stat-label">Net % of OI</span>
-        </div>
-        <div class="stat-card" id="stat-price">
-          <span class="stat-value">$2,350.50</span>
-          <span class="stat-label">Current Price</span>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COT Free — Commitment of Traders Visualization</title>
+    <meta
+      name="description"
+      content="Free, open-source Commitment of Traders (COT) data visualization tool. Track institutional positioning in futures markets."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#0a0e17" />
+    <link rel="stylesheet" href="css/style.css?v=7" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="app-header">
+      <div class="app-logo">
+        COT FREE
+        <span class="app-logo-sub">visualizer</span>
       </div>
 
-      <!-- Chart -->
-      <div class="chart-container">
-        <div id="chart-container" class="chart-wrapper"></div>
+      <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input id="search-input" type="text" placeholder="Search markets (Ctrl+K or /)" autocomplete="off" />
+        <span class="search-shortcut">Ctrl+K</span>
+        <div id="search-results" class="search-results"></div>
+      </div>
+
+      <div class="report-toggle">
+        <button class="report-btn active" data-report="legacy">Legacy</button>
+        <button class="report-btn" data-report="disaggregated">Disaggregated</button>
+        <button class="report-btn" data-report="tff">TFF</button>
+      </div>
+
+      <div class="live-indicator">
+        <button id="alert-btn" class="alert-btn" title="Alerts">
+          🔔
+          <span id="alert-dot" class="alert-dot" style="display: none">0</span>
+        </button>
+        <button id="refresh-btn" class="refresh-btn" title="Refresh data">⟳</button>
+        <span id="data-status" class="data-status">live</span>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="app-main">
+      <!-- Dashboard Panel -->
+      <div class="dashboard-panel">
+        <div class="dashboard-tabs">
+          <button class="dashboard-tab active" data-view="dashboard">Market</button>
+          <button class="dashboard-tab" data-view="friday-release">Friday Release</button>
+        </div>
+
+        <div id="dashboard-view">
+          <div class="market-header">
+            <h1 id="market-title" class="market-title">Gold (GC)</h1>
+            <span id="market-category" class="market-meta">Metal</span>
+            <span id="market-exchange" class="market-meta">COMEX</span>
+          </div>
+          <div id="report-date" class="report-date">Report: 2026-W20</div>
+
+          <!-- Extreme badge -->
+          <div id="extreme-badge" class="extreme-badge"></div>
+
+          <!-- Signal Score -->
+          <div id="signal-score" class="signal-score">
+            <div class="signal-score-inner">
+              <span id="signal-score-value" class="signal-score-value">—</span>
+              <span id="signal-score-label" class="signal-score-label">COT Signal</span>
+            </div>
+            <div class="signal-score-bar-track">
+              <div id="signal-score-bar" class="signal-score-bar" style="width: 50%"></div>
+            </div>
+            <div class="signal-score-labels">
+              <span>Bearish</span>
+              <span>Neutral</span>
+              <span>Bullish</span>
+            </div>
+          </div>
+
+          <!-- Stats -->
+          <div class="stats-grid">
+          <div class="stat-card" id="stat-net-position">
+            <span class="stat-value" style="color: #22c55e">+125,000</span>
+            <span class="stat-label">Commercial Net</span>
+          </div>
+          <div class="stat-card" id="stat-noncomm-net">
+            <span class="stat-value">-85,000</span>
+            <span class="stat-label">Speculator Net</span>
+          </div>
+          <div class="stat-card" id="stat-wow">
+            <span class="stat-value" style="color: #22c55e">▲ +12,500</span>
+            <span class="stat-label">WoW Change</span>
+          </div>
+          <div class="stat-card" id="stat-open-interest">
+            <span class="stat-value">850K</span>
+            <span class="stat-label">Open Interest</span>
+          </div>
+          <div class="stat-card" id="stat-percentile">
+            <span class="stat-value">92/100</span>
+            <span class="stat-label">52-Week Percentile</span>
+          </div>
+          <div class="stat-card" id="stat-pct-oi">
+            <span class="stat-value">14.7%</span>
+            <span class="stat-label">Net % of OI</span>
+          </div>
+          <div class="stat-card" id="stat-price">
+            <span class="stat-value">$2,350.50</span>
+            <span class="stat-label">Current Price</span>
+          </div>
+        </div>
+
+        <!-- Velocity -->
+        <div id="velocity-section" class="velocity-section">
+          <div class="velocity-title">Positioning Momentum</div>
+          <div class="velocity-row">
+            <div class="velocity-card" id="vel-2w">
+              <span class="vel-label">2-Week</span>
+              <span class="vel-value">—</span>
+            </div>
+            <div class="velocity-card" id="vel-4w">
+              <span class="vel-label">4-Week</span>
+              <span class="vel-value">—</span>
+            </div>
+            <div class="velocity-card" id="vel-8w">
+              <span class="vel-label">8-Week</span>
+              <span class="vel-value">—</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chart -->
+        <div class="chart-container">
+          <div class="chart-header">
+            <span class="chart-legend-item">
+              <span class="chart-legend-dot" style="background: #22c55e"></span>
+              Commercial / Managed Money Net
+            </span>
+            <span class="chart-legend-item">
+              <span class="chart-legend-dot" style="background: #ef4444"></span>
+              Speculators / Producers Net
+            </span>
+            <span class="chart-legend-item">
+              <span class="chart-legend-dot" style="background: #f59e0b"></span>
+              Price
+            </span>
+          </div>
+          <div id="chart-container" class="chart-wrapper"></div>
+        </div>
+
+        <!-- Analysis -->
+        <div id="analysis-box" class="analysis-box">
+          <div class="analysis-header">COT Analysis</div>
+          <div id="analysis-content" class="analysis-content">Select a market to view analysis...</div>
+        </div>
+      </div>
+
+      <!-- Friday Release Hub -->
+      <div id="friday-release-view" class="friday-release" style="display: none">
+        <div class="friday-release-header">
+          <div class="friday-release-title">Friday Release</div>
+          <div class="friday-release-sub">Markets with the most significant week-over-week positioning shifts</div>
+        </div>
+        <div id="friday-release-body" class="friday-release-body">
+          <div class="friday-release-loading">Loading...</div>
+        </div>
       </div>
     </div>
 
-    <!-- Screener Panel -->
-    <div class="screener-panel">
-      <div class="screener-header">Market Screener — All Markets</div>
-      <table class="screener-table">
-        <thead>
-          <tr>
-            <th onclick="sortScreener('market')">Market <span class="sort-arrow">↕</span></th>
-            <th onclick="sortScreener('symbol')">Sym <span class="sort-arrow">↕</span></th>
-            <th onclick="sortScreener('category')">Cat <span class="sort-arrow">↕</span></th>
-            <th onclick="sortScreener('categoryNet')" style="color:#22c55e">Comm Net <span class="sort-arrow">↕</span></th>
-            <th onclick="sortScreener('nonCategoryNet')" style="color:#ef4444">Spec Net <span class="sort-arrow">↕</span></th>
-            <th onclick="sortScreener('wow')">WoW <span class="sort-arrow">↕</span></th>
-            <th onclick="sortScreener('pctOfOI')">% OI <span class="sort-arrow">↕</span></th>
-            <th onclick="sortScreener('percentile')">%ile <span class="sort-arrow">↕</span></th>
-          </tr>
-        </thead>
-        <tbody id="screener-body"></tbody>
-      </table>
+      <!-- Screener Panel -->
+      <div class="screener-panel">
+        <div class="screener-header">
+          <div class="screener-header-main">Market Screener</div>
+          <div class="filter-pills" id="filter-pills">
+            <button class="filter-pill active" data-category="all">All</button>
+            <button class="filter-pill" data-category="Metal">Metal</button>
+            <button class="filter-pill" data-category="Energy">Energy</button>
+            <button class="filter-pill" data-category="Agriculture">Agriculture</button>
+            <button class="filter-pill" data-category="Currency">Currency</button>
+            <button class="filter-pill" data-category="Index">Index</button>
+            <button class="filter-pill" data-category="Rate">Rate</button>
+            <button class="filter-pill" data-category="Crypto">Crypto</button>
+          </div>
+        </div>
+        <table class="screener-table">
+          <thead>
+            <tr>
+              <th onclick="sortScreener('market')">Market <span class="sort-arrow">↕</span></th>
+              <th onclick="sortScreener('symbol')">Sym <span class="sort-arrow">↕</span></th>
+              <th onclick="sortScreener('category')">Cat <span class="sort-arrow">↕</span></th>
+              <th onclick="sortScreener('categoryNet')" style="color: #22c55e">
+                Comm Net <span class="sort-arrow">↕</span>
+              </th>
+              <th onclick="sortScreener('nonCategoryNet')" style="color: #ef4444">
+                Spec Net <span class="sort-arrow">↕</span>
+              </th>
+              <th onclick="sortScreener('wow')">WoW <span class="sort-arrow">↕</span></th>
+              <th onclick="sortScreener('pctOfOI')">% OI <span class="sort-arrow">↕</span></th>
+              <th onclick="sortScreener('percentile')">%ile <span class="sort-arrow">↕</span></th>
+            </tr>
+          </thead>
+          <tbody id="screener-body"></tbody>
+        </table>
+      </div>
     </div>
-  </div>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
-  <!-- Pipeline data (auto-generated by GitHub Actions — may not exist yet) -->
-  <script src="data/cftc-data.js?v=2"></script>
-  <script src="js/mock-data.js"></script>
-  <script src="js/data.js"></script>
-  <script src="js/chart.js?v=2"></script>
-  <script src="js/screener.js?v=2"></script>
-  <script src="js/app.js?v=2"></script>
-</body>
+    <!-- Alert Panel -->
+    <div id="alert-backdrop" class="alert-backdrop"></div>
+    <div id="alert-panel" class="alert-panel">
+      <div class="alert-panel-header">
+        <span class="alert-panel-title">🔔 Alerts</span>
+        <button class="alert-close" onclick="closeAlertPanel()">✕</button>
+      </div>
+      <div class="alert-panel-body">
+        <div id="alert-list" class="alert-list"></div>
+        <div class="alert-add-section">
+          <div class="alert-add-title">Add Alert</div>
+          <div class="alert-form">
+            <div class="alert-field">
+              <label>Market</label>
+              <select id="alert-market"></select>
+            </div>
+            <div class="alert-field">
+              <label>Metric</label>
+              <select id="alert-metric">
+                <option value="percentile">Commercial Percentile</option>
+                <option value="signalScore">COT Signal Score</option>
+                <option value="wow">WoW Change</option>
+                <option value="netPosition">Net Position</option>
+              </select>
+            </div>
+            <div class="alert-fields-row">
+              <div class="alert-field" style="flex: 0 0 80px">
+                <label>Cond</label>
+                <select id="alert-condition">
+                  <option value=">=">≥</option>
+                  <option value="<=">≤</option>
+                  <option value=">">&gt;</option>
+                  <option value="<">&lt;</option>
+                </select>
+              </div>
+              <div class="alert-field" style="flex: 1">
+                <label>Value</label>
+                <input type="number" id="alert-value" placeholder="0" />
+              </div>
+            </div>
+            <button id="alert-add-btn" class="alert-add-btn">Add Alert</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lightweight-charts@5/dist/lightweight-charts.standalone.production.js"></script>
+    <!-- Pipeline data (auto-generated by GitHub Actions — may not exist yet) -->
+    <script src="data/cftc-data.js?v=3"></script>
+    <script src="js/mock-data.js?v=3"></script>
+    <script src="js/data.js?v=3"></script>
+    <script src="js/chart.js?v=3"></script>
+    <script src="js/screener.js?v=3"></script>
+    <script src="js/alerts.js?v=1"></script>
+    <script src="js/app.js?v=3"></script>
+  </body>
 </html>

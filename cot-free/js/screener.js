@@ -5,28 +5,63 @@
 let screenerSortColumn = 'categoryNet';
 let screenerSortAsc = false;
 let screenerReportType = 'legacy';
+let screenerCategoryFilter = 'all';
 
 function renderScreener(reportType = 'legacy') {
   screenerReportType = reportType;
   const container = document.getElementById('screener-body');
   if (!container) return;
 
-  const metrics = getAllMarketMetrics(reportType);
+  let metrics = getAllMarketMetrics(reportType);
+
+  // Filter by category
+  if (screenerCategoryFilter !== 'all') {
+    metrics = metrics.filter((m) => m.market.category === screenerCategoryFilter);
+  }
 
   // Sort
   metrics.sort((a, b) => {
     let valA, valB;
     switch (screenerSortColumn) {
-      case 'market': valA = a.market.name; valB = b.market.name; break;
-      case 'symbol': valA = a.market.symbol; valB = b.market.symbol; break;
-      case 'category': valA = a.market.category; valB = b.market.category; break;
-      case 'price': valA = a.price; valB = b.price; break;
-      case 'categoryNet': valA = a.categoryNet; valB = b.categoryNet; break;
-      case 'nonCategoryNet': valA = a.nonCategoryNet; valB = b.nonCategoryNet; break;
-      case 'wow': valA = a.categoryWoW.absolute; valB = b.categoryWoW.absolute; break;
-      case 'pctOfOI': valA = a.categoryPctOfOI; valB = b.categoryPctOfOI; break;
-      case 'percentile': valA = a.categoryPercentile; valB = b.categoryPercentile; break;
-      default: valA = a.categoryNet; valB = b.categoryNet;
+      case 'market':
+        valA = a.market.name;
+        valB = b.market.name;
+        break;
+      case 'symbol':
+        valA = a.market.symbol;
+        valB = b.market.symbol;
+        break;
+      case 'category':
+        valA = a.market.category;
+        valB = b.market.category;
+        break;
+      case 'price':
+        valA = a.price;
+        valB = b.price;
+        break;
+      case 'categoryNet':
+        valA = a.categoryNet;
+        valB = b.categoryNet;
+        break;
+      case 'nonCategoryNet':
+        valA = a.nonCategoryNet;
+        valB = b.nonCategoryNet;
+        break;
+      case 'wow':
+        valA = a.categoryWoW.absolute;
+        valB = b.categoryWoW.absolute;
+        break;
+      case 'pctOfOI':
+        valA = a.categoryPctOfOI;
+        valB = b.categoryPctOfOI;
+        break;
+      case 'percentile':
+        valA = a.categoryPercentile;
+        valB = b.categoryPercentile;
+        break;
+      default:
+        valA = a.categoryNet;
+        valB = b.categoryNet;
     }
     if (typeof valA === 'string') {
       return screenerSortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
@@ -34,19 +69,20 @@ function renderScreener(reportType = 'legacy') {
     return screenerSortAsc ? valA - valB : valB - valA;
   });
 
-  container.innerHTML = metrics.map(m => {
-    const isExtremeLong = m.categoryPercentile >= 90;
-    const isExtremeShort = m.categoryPercentile <= 10;
-    const heatColor = isExtremeLong ? '#22c55e' : isExtremeShort ? '#ef4444' : 'transparent';
-    const heatBg = isExtremeLong ? 'rgba(34,197,94,0.15)' : isExtremeShort ? 'rgba(239,68,68,0.15)' : 'transparent';
+  container.innerHTML = metrics
+    .map((m) => {
+      const isExtremeLong = m.categoryPercentile >= 90;
+      const isExtremeShort = m.categoryPercentile <= 10;
+      const heatColor = isExtremeLong ? '#22c55e' : isExtremeShort ? '#ef4444' : 'transparent';
+      const heatBg = isExtremeLong ? 'rgba(34,197,94,0.15)' : isExtremeShort ? 'rgba(239,68,68,0.15)' : 'transparent';
 
-    // Color-coded net position
-    const netColor = m.categoryNet > 0 ? '#22c55e' : m.categoryNet < 0 ? '#ef4444' : '#94a3b8';
-    const nonCatNetColor = m.nonCategoryNet > 0 ? '#22c55e' : m.nonCategoryNet < 0 ? '#ef4444' : '#94a3b8';
-    const wowColor = m.categoryWoW.absolute > 0 ? '#22c55e' : m.categoryWoW.absolute < 0 ? '#ef4444' : '#94a3b8';
-    const wowArrow = m.categoryWoW.absolute > 0 ? '▲' : m.categoryWoW.absolute < 0 ? '▼' : '―';
+      // Color-coded net position
+      const netColor = m.categoryNet > 0 ? '#22c55e' : m.categoryNet < 0 ? '#ef4444' : '#94a3b8';
+      const nonCatNetColor = m.nonCategoryNet > 0 ? '#22c55e' : m.nonCategoryNet < 0 ? '#ef4444' : '#94a3b8';
+      const wowColor = m.categoryWoW.absolute > 0 ? '#22c55e' : m.categoryWoW.absolute < 0 ? '#ef4444' : '#94a3b8';
+      const wowArrow = m.categoryWoW.absolute > 0 ? '▲' : m.categoryWoW.absolute < 0 ? '▼' : '―';
 
-    return `<tr class="screener-row" data-market="${m.market.id}" onclick="selectMarket('${m.market.id}')">
+      return `<tr class="screener-row" data-market="${m.market.id}" onclick="selectMarket('${m.market.id}')">
       <td>${m.market.name}</td>
       <td class="screener-symbol">${m.market.symbol}</td>
       <td><span class="cat-badge">${m.market.category}</span></td>
@@ -61,7 +97,21 @@ function renderScreener(reportType = 'legacy') {
         <span class="percentile-label">${m.categoryPercentile}</span>
       </td>
     </tr>`;
-  }).join('');
+    })
+    .join('');
+}
+
+function initFilterPills() {
+  const pills = document.querySelectorAll('.filter-pill');
+  pills.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.category;
+      if (cat === screenerCategoryFilter) return;
+      screenerCategoryFilter = cat;
+      pills.forEach((p) => p.classList.toggle('active', p.dataset.category === cat));
+      renderScreener(screenerReportType);
+    });
+  });
 }
 
 function sortScreener(column) {

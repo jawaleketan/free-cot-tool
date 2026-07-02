@@ -2,7 +2,7 @@
   "meta": {
     "source": "CFTC.gov",
     "year": "2026",
-    "fetchedAt": "2026-06-27T09:25:47.413Z",
+    "fetchedAt": "2026-07-02T13:00:12.483Z",
     "marketCount": 30,
     "weekCounts": {
       "gold": 20,
@@ -255,7 +255,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 352167,
-        "price": 2350,
+        "price": 4078.699951171875,
         "legacy": {
           "commercial": {
             "long": 64579,
@@ -295,7 +295,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 339330,
-        "price": 2350,
+        "price": 4145.2998046875,
         "legacy": {
           "commercial": {
             "long": 58220,
@@ -335,7 +335,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 332709,
-        "price": 2350,
+        "price": 4215,
         "legacy": {
           "commercial": {
             "long": 58986,
@@ -375,7 +375,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 326052,
-        "price": 2350,
+        "price": 4337.10009765625,
         "legacy": {
           "commercial": {
             "long": 53851,
@@ -415,7 +415,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 353489,
-        "price": 2350,
+        "price": 4560.5,
         "legacy": {
           "commercial": {
             "long": 74641,
@@ -455,7 +455,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 379325,
-        "price": 2350,
+        "price": 4521,
         "legacy": {
           "commercial": {
             "long": 69520,
@@ -495,7 +495,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 376496,
-        "price": 2350,
+        "price": 4555.7998046875,
         "legacy": {
           "commercial": {
             "long": 57725,
@@ -535,7 +535,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 367932,
-        "price": 2350,
+        "price": 4720.39990234375,
         "legacy": {
           "commercial": {
             "long": 58230,
@@ -575,7 +575,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 369530,
-        "price": 2350,
+        "price": 4629.89990234375,
         "legacy": {
           "commercial": {
             "long": 60553,
@@ -615,7 +615,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 365842,
-        "price": 2350,
+        "price": 4722.2998046875,
         "legacy": {
           "commercial": {
             "long": 56261,
@@ -655,7 +655,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 362274,
-        "price": 2350,
+        "price": 4857.60009765625,
         "legacy": {
           "commercial": {
             "long": 55757,
@@ -695,7 +695,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 354877,
-        "price": 2350,
+        "price": 4761.89990234375,
         "legacy": {
           "commercial": {
             "long": 57729,
@@ -735,7 +735,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 361409,
-        "price": 2350,
+        "price": 4651.5,
         "legacy": {
           "commercial": {
             "long": 58697,
@@ -775,7 +775,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 403925,
-        "price": 2350,
+        "price": 4492,
         "legacy": {
           "commercial": {
             "long": 76997,
@@ -815,7 +815,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 411388,
-        "price": 2350,
+        "price": 4570.39990234375,
         "legacy": {
           "commercial": {
             "long": 86184,
@@ -855,7 +855,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 413956,
-        "price": 2350,
+        "price": 5052.5,
         "legacy": {
           "commercial": {
             "long": 85280,
@@ -895,7 +895,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 409789,
-        "price": 2350,
+        "price": 5146.10009765625,
         "legacy": {
           "commercial": {
             "long": 84834,
@@ -935,7 +935,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 420182,
-        "price": 2350,
+        "price": 5230.5,
         "legacy": {
           "commercial": {
             "long": 86198,
@@ -975,7 +975,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 407078,
-        "price": 2350,
+        "price": 5059.2998046875,
         "legacy": {
           "commercial": {
             "long": 88237,
@@ -1015,7 +1015,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 404391,
-        "price": 2350,
+        "price": 5022,
         "legacy": {
           "commercial": {
             "long": 88738,
@@ -1057,7 +1057,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 108944,
-        "price": 28,
+        "price": 59.21699905395508,
         "legacy": {
           "commercial": {
             "long": 30501,
@@ -1097,7 +1097,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 107721,
-        "price": 28,
+        "price": 66.25499725341797,
         "legacy": {
           "commercial": {
             "long": 30683,
@@ -1137,7 +1137,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 103440,
-        "price": 28,
+        "price": 67.85900115966797,
         "legacy": {
           "commercial": {
             "long": 26660,
@@ -1177,7 +1177,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 102809,
-        "price": 28,
+        "price": 68.94300079345703,
         "legacy": {
           "commercial": {
             "long": 25782,
@@ -1217,7 +1217,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 101744,
-        "price": 28,
+        "price": 75.61599731445312,
         "legacy": {
           "commercial": {
             "long": 27605,
@@ -1257,7 +1257,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 100751,
-        "price": 28,
+        "price": 75.89299774169922,
         "legacy": {
           "commercial": {
             "long": 27108,
@@ -1297,7 +1297,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 103800,
-        "price": 28,
+        "price": 77.16100311279297,
         "legacy": {
           "commercial": {
             "long": 27341,
@@ -1337,7 +1337,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 96932,
-        "price": 28,
+        "price": 80.3949966430664,
         "legacy": {
           "commercial": {
             "long": 26094,
@@ -1377,7 +1377,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 101275,
-        "price": 28,
+        "price": 75.95099639892578,
         "legacy": {
           "commercial": {
             "long": 29676,
@@ -1417,7 +1417,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 115462,
-        "price": 28,
+        "price": 76.38300323486328,
         "legacy": {
           "commercial": {
             "long": 32357,
@@ -1457,7 +1457,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 116983,
-        "price": 28,
+        "price": 81.73799896240234,
         "legacy": {
           "commercial": {
             "long": 32338,
@@ -1497,7 +1497,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 115138,
-        "price": 28,
+        "price": 76.3239974975586,
         "legacy": {
           "commercial": {
             "long": 28211,
@@ -1537,7 +1537,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 115169,
-        "price": 28,
+        "price": 72.73500061035156,
         "legacy": {
           "commercial": {
             "long": 29892,
@@ -1577,7 +1577,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 113164,
-        "price": 28,
+        "price": 69.54499816894531,
         "legacy": {
           "commercial": {
             "long": 29511,
@@ -1617,7 +1617,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 114758,
-        "price": 28,
+        "price": 69.36000061035156,
         "legacy": {
           "commercial": {
             "long": 31938,
@@ -1657,7 +1657,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 115458,
-        "price": 28,
+        "price": 80.91400146484375,
         "legacy": {
           "commercial": {
             "long": 31789,
@@ -1697,7 +1697,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 113326,
-        "price": 28,
+        "price": 83.81600189208984,
         "legacy": {
           "commercial": {
             "long": 30893,
@@ -1737,7 +1737,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 125454,
-        "price": 28,
+        "price": 92.68199920654297,
         "legacy": {
           "commercial": {
             "long": 35475,
@@ -1777,7 +1777,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 131496,
-        "price": 28,
+        "price": 82.28299713134766,
         "legacy": {
           "commercial": {
             "long": 36729,
@@ -1817,7 +1817,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 133641,
-        "price": 28,
+        "price": 77.85099792480469,
         "legacy": {
           "commercial": {
             "long": 37295,
@@ -1859,7 +1859,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 218740,
-        "price": 78,
+        "price": 69.2300033569336,
         "legacy": {
           "commercial": {
             "long": 129216,
@@ -1899,7 +1899,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 216548,
-        "price": 78,
+        "price": 77.54000091552734,
         "legacy": {
           "commercial": {
             "long": 128433,
@@ -1939,7 +1939,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 209220,
-        "price": 78,
+        "price": 84.87999725341797,
         "legacy": {
           "commercial": {
             "long": 122221,
@@ -1979,7 +1979,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 200211,
-        "price": 78,
+        "price": 90.54000091552734,
         "legacy": {
           "commercial": {
             "long": 109313,
@@ -2019,7 +2019,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 228086,
-        "price": 78,
+        "price": 87.36000061035156,
         "legacy": {
           "commercial": {
             "long": 124890,
@@ -2059,7 +2059,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 225508,
-        "price": 78,
+        "price": 96.5999984741211,
         "legacy": {
           "commercial": {
             "long": 123710,
@@ -2099,7 +2099,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 222402,
-        "price": 78,
+        "price": 105.41999816894531,
         "legacy": {
           "commercial": {
             "long": 120909,
@@ -2139,7 +2139,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 217942,
-        "price": 78,
+        "price": 95.41999816894531,
         "legacy": {
           "commercial": {
             "long": 117273,
@@ -2179,7 +2179,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 239741,
-        "price": 78,
+        "price": 101.94000244140625,
         "legacy": {
           "commercial": {
             "long": 135081,
@@ -2219,7 +2219,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 232833,
-        "price": 78,
+        "price": 94.4000015258789,
         "legacy": {
           "commercial": {
             "long": 129327,
@@ -2259,7 +2259,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 226616,
-        "price": 78,
+        "price": 83.8499984741211,
         "legacy": {
           "commercial": {
             "long": 122867,
@@ -2299,7 +2299,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 220157,
-        "price": 78,
+        "price": 96.56999969482422,
         "legacy": {
           "commercial": {
             "long": 118116,
@@ -2339,7 +2339,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 235004,
-        "price": 78,
+        "price": 111.54000091552734,
         "legacy": {
           "commercial": {
             "long": 131234,
@@ -2379,7 +2379,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 225742,
-        "price": 78,
+        "price": 99.63999938964844,
         "legacy": {
           "commercial": {
             "long": 121639,
@@ -2419,7 +2419,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 213364,
-        "price": 78,
+        "price": 98.31999969482422,
         "legacy": {
           "commercial": {
             "long": 112354,
@@ -2459,7 +2459,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 206658,
-        "price": 78,
+        "price": 98.70999908447266,
         "legacy": {
           "commercial": {
             "long": 107852,
@@ -2499,7 +2499,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 188874,
-        "price": 78,
+        "price": 90.9000015258789,
         "legacy": {
           "commercial": {
             "long": 93548,
@@ -2539,7 +2539,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 189804,
-        "price": 78,
+        "price": 67.0199966430664,
         "legacy": {
           "commercial": {
             "long": 96583,
@@ -2579,7 +2579,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 176823,
-        "price": 78,
+        "price": 66.38999938964844,
         "legacy": {
           "commercial": {
             "long": 86681,
@@ -2619,7 +2619,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 172532,
-        "price": 78,
+        "price": 62.88999938964844,
         "legacy": {
           "commercial": {
             "long": 82476,
@@ -2661,7 +2661,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 1613059,
-        "price": 2.5,
+        "price": 3.2309999465942383,
         "legacy": {
           "commercial": {
             "long": 569783,
@@ -2701,7 +2701,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 1644546,
-        "price": 2.5,
+        "price": 3.197999954223633,
         "legacy": {
           "commercial": {
             "long": 584849,
@@ -2741,7 +2741,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 1637740,
-        "price": 2.5,
+        "price": 3.119999885559082,
         "legacy": {
           "commercial": {
             "long": 586195,
@@ -2781,7 +2781,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 1664003,
-        "price": 2.5,
+        "price": 3.2290000915527344,
         "legacy": {
           "commercial": {
             "long": 598716,
@@ -2821,7 +2821,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 1640082,
-        "price": 2.5,
+        "price": 3.2899999618530273,
         "legacy": {
           "commercial": {
             "long": 598594,
@@ -2861,7 +2861,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 1599429,
-        "price": 2.5,
+        "price": 2.9070000648498535,
         "legacy": {
           "commercial": {
             "long": 578821,
@@ -2901,7 +2901,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 1628279,
-        "price": 2.5,
+        "price": 2.9600000381469727,
         "legacy": {
           "commercial": {
             "long": 589225,
@@ -2941,7 +2941,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 1628637,
-        "price": 2.5,
+        "price": 2.756999969482422,
         "legacy": {
           "commercial": {
             "long": 578708,
@@ -2981,7 +2981,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 1578600,
-        "price": 2.5,
+        "price": 2.7799999713897705,
         "legacy": {
           "commercial": {
             "long": 563639,
@@ -3021,7 +3021,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 1576663,
-        "price": 2.5,
+        "price": 2.5230000019073486,
         "legacy": {
           "commercial": {
             "long": 556426,
@@ -3061,7 +3061,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 1585240,
-        "price": 2.5,
+        "price": 2.6740000247955322,
         "legacy": {
           "commercial": {
             "long": 568949,
@@ -3101,7 +3101,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 1558863,
-        "price": 2.5,
+        "price": 2.6480000019073486,
         "legacy": {
           "commercial": {
             "long": 572123,
@@ -3141,7 +3141,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 1514508,
-        "price": 2.5,
+        "price": 2.799999952316284,
         "legacy": {
           "commercial": {
             "long": 564656,
@@ -3181,7 +3181,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 1504052,
-        "price": 2.5,
+        "price": 3.0950000286102295,
         "legacy": {
           "commercial": {
             "long": 562540,
@@ -3221,7 +3221,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 1560291,
-        "price": 2.5,
+        "price": 3.0950000286102295,
         "legacy": {
           "commercial": {
             "long": 593186,
@@ -3261,7 +3261,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 1565341,
-        "price": 2.5,
+        "price": 3.13100004196167,
         "legacy": {
           "commercial": {
             "long": 605667,
@@ -3301,7 +3301,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 1606292,
-        "price": 2.5,
+        "price": 3.186000108718872,
         "legacy": {
           "commercial": {
             "long": 607907,
@@ -3341,7 +3341,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 1619531,
-        "price": 2.5,
+        "price": 2.8589999675750732,
         "legacy": {
           "commercial": {
             "long": 605335,
@@ -3381,7 +3381,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 1613556,
-        "price": 2.5,
+        "price": 3.046999931335449,
         "legacy": {
           "commercial": {
             "long": 615910,
@@ -3421,7 +3421,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 1623408,
-        "price": 2.5,
+        "price": 3.243000030517578,
         "legacy": {
           "commercial": {
             "long": 600195,
@@ -3463,7 +3463,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 268800,
-        "price": 4.2,
+        "price": 6.141499996185303,
         "legacy": {
           "commercial": {
             "long": 92377,
@@ -3503,7 +3503,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 270752,
-        "price": 4.2,
+        "price": 6.354000091552734,
         "legacy": {
           "commercial": {
             "long": 91951,
@@ -3543,7 +3543,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 274331,
-        "price": 4.2,
+        "price": 6.430500030517578,
         "legacy": {
           "commercial": {
             "long": 86211,
@@ -3583,7 +3583,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 276892,
-        "price": 4.2,
+        "price": 6.263500213623047,
         "legacy": {
           "commercial": {
             "long": 84829,
@@ -3623,7 +3623,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 266243,
-        "price": 4.2,
+        "price": 6.359499931335449,
         "legacy": {
           "commercial": {
             "long": 88083,
@@ -3663,7 +3663,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 257964,
-        "price": 4.2,
+        "price": 6.3420000076293945,
         "legacy": {
           "commercial": {
             "long": 83511,
@@ -3703,7 +3703,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 259808,
-        "price": 4.2,
+        "price": 6.251500129699707,
         "legacy": {
           "commercial": {
             "long": 84538,
@@ -3743,7 +3743,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 232609,
-        "price": 4.2,
+        "price": 6.249000072479248,
         "legacy": {
           "commercial": {
             "long": 82829,
@@ -3783,7 +3783,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 230596,
-        "price": 4.2,
+        "price": 5.932000160217285,
         "legacy": {
           "commercial": {
             "long": 86236,
@@ -3823,7 +3823,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 250504,
-        "price": 4.2,
+        "price": 6.023499965667725,
         "legacy": {
           "commercial": {
             "long": 87855,
@@ -3863,7 +3863,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 245595,
-        "price": 4.2,
+        "price": 6.103499889373779,
         "legacy": {
           "commercial": {
             "long": 88954,
@@ -3903,7 +3903,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 224634,
-        "price": 4.2,
+        "price": 5.870500087738037,
         "legacy": {
           "commercial": {
             "long": 84019,
@@ -3943,7 +3943,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 220756,
-        "price": 4.2,
+        "price": 5.563000202178955,
         "legacy": {
           "commercial": {
             "long": 84546,
@@ -3983,7 +3983,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 221772,
-        "price": 4.2,
+        "price": 5.4670000076293945,
         "legacy": {
           "commercial": {
             "long": 90872,
@@ -4023,7 +4023,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 231319,
-        "price": 4.2,
+        "price": 5.34250020980835,
         "legacy": {
           "commercial": {
             "long": 87339,
@@ -4063,7 +4063,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 235322,
-        "price": 4.2,
+        "price": 5.7144999504089355,
         "legacy": {
           "commercial": {
             "long": 87652,
@@ -4103,7 +4103,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 244932,
-        "price": 4.2,
+        "price": 5.756999969482422,
         "legacy": {
           "commercial": {
             "long": 85481,
@@ -4143,7 +4143,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 261235,
-        "price": 4.2,
+        "price": 6.004499912261963,
         "legacy": {
           "commercial": {
             "long": 90248,
@@ -4183,7 +4183,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 272967,
-        "price": 4.2,
+        "price": 5.830999851226807,
         "legacy": {
           "commercial": {
             "long": 91573,
@@ -4223,7 +4223,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 270792,
-        "price": 4.2,
+        "price": 5.792500019073486,
         "legacy": {
           "commercial": {
             "long": 85237,
@@ -6671,7 +6671,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 186617,
-        "price": 2,
+        "price": 286.75,
         "legacy": {
           "commercial": {
             "long": 70454,
@@ -6711,7 +6711,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 193019,
-        "price": 2,
+        "price": 275.1000061035156,
         "legacy": {
           "commercial": {
             "long": 77023,
@@ -6751,7 +6751,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 213519,
-        "price": 2,
+        "price": 257.20001220703125,
         "legacy": {
           "commercial": {
             "long": 88452,
@@ -6791,7 +6791,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 202855,
-        "price": 2,
+        "price": 246.5,
         "legacy": {
           "commercial": {
             "long": 80997,
@@ -6831,7 +6831,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 193648,
-        "price": 2,
+        "price": 265.6000061035156,
         "legacy": {
           "commercial": {
             "long": 74669,
@@ -6871,7 +6871,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 189817,
-        "price": 2,
+        "price": 272.3500061035156,
         "legacy": {
           "commercial": {
             "long": 73346,
@@ -6911,7 +6911,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 182249,
-        "price": 2,
+        "price": 284.6000061035156,
         "legacy": {
           "commercial": {
             "long": 68563,
@@ -6951,7 +6951,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 176045,
-        "price": 2,
+        "price": 289.70001220703125,
         "legacy": {
           "commercial": {
             "long": 62259,
@@ -6991,7 +6991,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 171239,
-        "price": 2,
+        "price": 302,
         "legacy": {
           "commercial": {
             "long": 62350,
@@ -7031,7 +7031,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 162870,
-        "price": 2,
+        "price": 309.79998779296875,
         "legacy": {
           "commercial": {
             "long": 61935,
@@ -7071,7 +7071,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 168563,
-        "price": 2,
+        "price": 289.29998779296875,
         "legacy": {
           "commercial": {
             "long": 63997,
@@ -7111,7 +7111,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 176140,
-        "price": 2,
+        "price": 300.1000061035156,
         "legacy": {
           "commercial": {
             "long": 68102,
@@ -7151,7 +7151,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 175500,
-        "price": 2,
+        "price": 295.3999938964844,
         "legacy": {
           "commercial": {
             "long": 66289,
@@ -7191,7 +7191,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 174861,
-        "price": 2,
+        "price": 301.70001220703125,
         "legacy": {
           "commercial": {
             "long": 65731,
@@ -7231,7 +7231,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 173683,
-        "price": 2,
+        "price": 309.75,
         "legacy": {
           "commercial": {
             "long": 70038,
@@ -7271,7 +7271,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 167071,
-        "price": 2,
+        "price": 290.3500061035156,
         "legacy": {
           "commercial": {
             "long": 70751,
@@ -7311,7 +7311,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 169433,
-        "price": 2,
+        "price": 297.6000061035156,
         "legacy": {
           "commercial": {
             "long": 72071,
@@ -7351,7 +7351,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 164239,
-        "price": 2,
+        "price": 284.6000061035156,
         "legacy": {
           "commercial": {
             "long": 68198,
@@ -7391,7 +7391,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 156645,
-        "price": 2,
+        "price": 288.29998779296875,
         "legacy": {
           "commercial": {
             "long": 65722,
@@ -7431,7 +7431,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 175044,
-        "price": 2,
+        "price": 300.04998779296875,
         "legacy": {
           "commercial": {
             "long": 77890,
@@ -7473,7 +7473,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 1007082,
-        "price": 0.22,
+        "price": 13.979999542236328,
         "legacy": {
           "commercial": {
             "long": 512280,
@@ -7513,7 +7513,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 1010191,
-        "price": 0.22,
+        "price": 13.59000015258789,
         "legacy": {
           "commercial": {
             "long": 516733,
@@ -7553,7 +7553,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 1009892,
-        "price": 0.22,
+        "price": 13.699999809265137,
         "legacy": {
           "commercial": {
             "long": 513549,
@@ -7593,7 +7593,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 979429,
-        "price": 0.22,
+        "price": 14.140000343322754,
         "legacy": {
           "commercial": {
             "long": 500138,
@@ -7633,7 +7633,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 967447,
-        "price": 0.22,
+        "price": 14.0600004196167,
         "legacy": {
           "commercial": {
             "long": 490877,
@@ -7673,7 +7673,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 970925,
-        "price": 0.22,
+        "price": 14.699999809265137,
         "legacy": {
           "commercial": {
             "long": 487110,
@@ -7713,7 +7713,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 961423,
-        "price": 0.22,
+        "price": 14.800000190734863,
         "legacy": {
           "commercial": {
             "long": 485552,
@@ -7753,7 +7753,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 969640,
-        "price": 0.22,
+        "price": 14.6899995803833,
         "legacy": {
           "commercial": {
             "long": 481686,
@@ -7793,7 +7793,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 972678,
-        "price": 0.22,
+        "price": 14.949999809265137,
         "legacy": {
           "commercial": {
             "long": 501949,
@@ -7833,7 +7833,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 978152,
-        "price": 0.22,
+        "price": 13.930000305175781,
         "legacy": {
           "commercial": {
             "long": 535845,
@@ -7873,7 +7873,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 946729,
-        "price": 0.22,
+        "price": 13.3100004196167,
         "legacy": {
           "commercial": {
             "long": 538547,
@@ -7913,7 +7913,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 924257,
-        "price": 0.22,
+        "price": 13.75,
         "legacy": {
           "commercial": {
             "long": 487724,
@@ -7953,7 +7953,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 927493,
-        "price": 0.22,
+        "price": 15,
         "legacy": {
           "commercial": {
             "long": 482933,
@@ -7993,7 +7993,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 940662,
-        "price": 0.22,
+        "price": 15.760000228881836,
         "legacy": {
           "commercial": {
             "long": 482040,
@@ -8033,7 +8033,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 1005609,
-        "price": 0.22,
+        "price": 15.699999809265137,
         "legacy": {
           "commercial": {
             "long": 531142,
@@ -8073,7 +8073,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 1035892,
-        "price": 0.22,
+        "price": 14.369999885559082,
         "legacy": {
           "commercial": {
             "long": 531749,
@@ -8113,7 +8113,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 1048631,
-        "price": 0.22,
+        "price": 14.100000381469727,
         "legacy": {
           "commercial": {
             "long": 557892,
@@ -8153,7 +8153,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 1054389,
-        "price": 0.22,
+        "price": 14.300000190734863,
         "legacy": {
           "commercial": {
             "long": 582265,
@@ -8193,7 +8193,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 1099675,
-        "price": 0.22,
+        "price": 14.300000190734863,
         "legacy": {
           "commercial": {
             "long": 625812,
@@ -8233,7 +8233,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 1095771,
-        "price": 0.22,
+        "price": 13.779999732971191,
         "legacy": {
           "commercial": {
             "long": 625829,
@@ -8275,7 +8275,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 302703,
-        "price": 0.65,
+        "price": 71.66000366210938,
         "legacy": {
           "commercial": {
             "long": 104997,
@@ -8315,7 +8315,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 306642,
-        "price": 0.65,
+        "price": 76.05000305175781,
         "legacy": {
           "commercial": {
             "long": 110591,
@@ -8355,7 +8355,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 324979,
-        "price": 0.65,
+        "price": 72.94000244140625,
         "legacy": {
           "commercial": {
             "long": 121661,
@@ -8395,7 +8395,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 345818,
-        "price": 0.65,
+        "price": 73.75,
         "legacy": {
           "commercial": {
             "long": 124567,
@@ -8435,7 +8435,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 331157,
-        "price": 0.65,
+        "price": 76.1500015258789,
         "legacy": {
           "commercial": {
             "long": 114884,
@@ -8475,7 +8475,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 329298,
-        "price": 0.65,
+        "price": 77.41999816894531,
         "legacy": {
           "commercial": {
             "long": 110947,
@@ -8515,7 +8515,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 335218,
-        "price": 0.65,
+        "price": 80.61000061035156,
         "legacy": {
           "commercial": {
             "long": 103453,
@@ -8555,7 +8555,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 332623,
-        "price": 0.65,
+        "price": 84.7300033569336,
         "legacy": {
           "commercial": {
             "long": 100805,
@@ -8595,7 +8595,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 323836,
-        "price": 0.65,
+        "price": 81.8499984741211,
         "legacy": {
           "commercial": {
             "long": 105182,
@@ -8635,7 +8635,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 329774,
-        "price": 0.65,
+        "price": 77,
         "legacy": {
           "commercial": {
             "long": 108509,
@@ -8675,7 +8675,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 328443,
-        "price": 0.65,
+        "price": 77.4000015258789,
         "legacy": {
           "commercial": {
             "long": 113343,
@@ -8715,7 +8715,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 346121,
-        "price": 0.65,
+        "price": 73.22000122070312,
         "legacy": {
           "commercial": {
             "long": 124058,
@@ -8755,7 +8755,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 347695,
-        "price": 0.65,
+        "price": 70.91999816894531,
         "legacy": {
           "commercial": {
             "long": 126818,
@@ -8795,7 +8795,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 327959,
-        "price": 0.65,
+        "price": 69.45999908447266,
         "legacy": {
           "commercial": {
             "long": 126034,
@@ -8835,7 +8835,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 341326,
-        "price": 0.65,
+        "price": 67.30999755859375,
         "legacy": {
           "commercial": {
             "long": 131594,
@@ -8875,7 +8875,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 329892,
-        "price": 0.65,
+        "price": 65.8499984741211,
         "legacy": {
           "commercial": {
             "long": 137358,
@@ -8915,7 +8915,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 328391,
-        "price": 0.65,
+        "price": 63.189998626708984,
         "legacy": {
           "commercial": {
             "long": 138605,
@@ -8955,7 +8955,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 320823,
-        "price": 0.65,
+        "price": 63.61000061035156,
         "legacy": {
           "commercial": {
             "long": 136769,
@@ -8995,7 +8995,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 338635,
-        "price": 0.65,
+        "price": 63.029998779296875,
         "legacy": {
           "commercial": {
             "long": 156452,
@@ -9035,7 +9035,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 360578,
-        "price": 0.65,
+        "price": 62.11000061035156,
         "legacy": {
           "commercial": {
             "long": 168492,
@@ -9077,7 +9077,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 328903,
-        "price": 185,
+        "price": 257.45001220703125,
         "legacy": {
           "commercial": {
             "long": 94603,
@@ -9117,7 +9117,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 329990,
-        "price": 185,
+        "price": 254.8000030517578,
         "legacy": {
           "commercial": {
             "long": 97475,
@@ -9157,7 +9157,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 317380,
-        "price": 185,
+        "price": 249.875,
         "legacy": {
           "commercial": {
             "long": 99064,
@@ -9197,7 +9197,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 343287,
-        "price": 185,
+        "price": 250.0749969482422,
         "legacy": {
           "commercial": {
             "long": 101534,
@@ -9237,7 +9237,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 349927,
-        "price": 185,
+        "price": 248.25,
         "legacy": {
           "commercial": {
             "long": 106193,
@@ -9277,7 +9277,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 364542,
-        "price": 185,
+        "price": 249.3000030517578,
         "legacy": {
           "commercial": {
             "long": 104747,
@@ -9317,7 +9317,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 354995,
-        "price": 185,
+        "price": 253.89999389648438,
         "legacy": {
           "commercial": {
             "long": 96978,
@@ -9357,7 +9357,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 360025,
-        "price": 185,
+        "price": 248.89999389648438,
         "legacy": {
           "commercial": {
             "long": 100646,
@@ -9397,7 +9397,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 350035,
-        "price": 185,
+        "price": 253,
         "legacy": {
           "commercial": {
             "long": 101257,
@@ -9437,7 +9437,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 339003,
-        "price": 185,
+        "price": 248.3000030517578,
         "legacy": {
           "commercial": {
             "long": 96446,
@@ -9477,7 +9477,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 340989,
-        "price": 185,
+        "price": 249.9499969482422,
         "legacy": {
           "commercial": {
             "long": 97746,
@@ -9517,7 +9517,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 343368,
-        "price": 185,
+        "price": 251.77499389648438,
         "legacy": {
           "commercial": {
             "long": 98073,
@@ -9557,7 +9557,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 339048,
-        "price": 185,
+        "price": 246.1999969482422,
         "legacy": {
           "commercial": {
             "long": 102496,
@@ -9597,7 +9597,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 334831,
-        "price": 185,
+        "price": 238.5,
         "legacy": {
           "commercial": {
             "long": 104088,
@@ -9637,7 +9637,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 334142,
-        "price": 185,
+        "price": 234.0500030517578,
         "legacy": {
           "commercial": {
             "long": 106026,
@@ -9677,7 +9677,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 334594,
-        "price": 185,
+        "price": 230.89999389648438,
         "legacy": {
           "commercial": {
             "long": 106753,
@@ -9717,7 +9717,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 342175,
-        "price": 185,
+        "price": 234.5749969482422,
         "legacy": {
           "commercial": {
             "long": 102033,
@@ -9757,7 +9757,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 341685,
-        "price": 185,
+        "price": 244,
         "legacy": {
           "commercial": {
             "long": 100516,
@@ -9797,7 +9797,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 330128,
-        "price": 185,
+        "price": 246.5749969482422,
         "legacy": {
           "commercial": {
             "long": 102308,
@@ -9837,7 +9837,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 325815,
-        "price": 185,
+        "price": 243.0749969482422,
         "legacy": {
           "commercial": {
             "long": 106778,
@@ -9879,7 +9879,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 289711,
-        "price": 85,
+        "price": 92.92500305175781,
         "legacy": {
           "commercial": {
             "long": 130019,
@@ -9919,7 +9919,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 306985,
-        "price": 85,
+        "price": 95.0250015258789,
         "legacy": {
           "commercial": {
             "long": 140014,
@@ -9959,7 +9959,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 311971,
-        "price": 85,
+        "price": 92.5250015258789,
         "legacy": {
           "commercial": {
             "long": 130274,
@@ -9999,7 +9999,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 322263,
-        "price": 85,
+        "price": 94.30000305175781,
         "legacy": {
           "commercial": {
             "long": 131229,
@@ -10039,7 +10039,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 326000,
-        "price": 85,
+        "price": 95.8499984741211,
         "legacy": {
           "commercial": {
             "long": 133802,
@@ -10079,7 +10079,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 326378,
-        "price": 85,
+        "price": 95.75,
         "legacy": {
           "commercial": {
             "long": 129862,
@@ -10119,7 +10119,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 321286,
-        "price": 85,
+        "price": 98.75,
         "legacy": {
           "commercial": {
             "long": 128477,
@@ -10159,7 +10159,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 316426,
-        "price": 85,
+        "price": 90.875,
         "legacy": {
           "commercial": {
             "long": 124191,
@@ -10199,7 +10199,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 316938,
-        "price": 85,
+        "price": 92.82499694824219,
         "legacy": {
           "commercial": {
             "long": 120446,
@@ -10239,7 +10239,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 311272,
-        "price": 85,
+        "price": 94.30000305175781,
         "legacy": {
           "commercial": {
             "long": 115319,
@@ -10279,7 +10279,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 328732,
-        "price": 85,
+        "price": 93.4000015258789,
         "legacy": {
           "commercial": {
             "long": 117396,
@@ -10319,7 +10319,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 330222,
-        "price": 85,
+        "price": 90.7249984741211,
         "legacy": {
           "commercial": {
             "long": 114438,
@@ -10359,7 +10359,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 329500,
-        "price": 85,
+        "price": 90.3499984741211,
         "legacy": {
           "commercial": {
             "long": 115185,
@@ -10399,7 +10399,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 337624,
-        "price": 85,
+        "price": 90.7750015258789,
         "legacy": {
           "commercial": {
             "long": 114534,
@@ -10439,7 +10439,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 359264,
-        "price": 85,
+        "price": 91.2750015258789,
         "legacy": {
           "commercial": {
             "long": 113640,
@@ -10479,7 +10479,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 372459,
-        "price": 85,
+        "price": 93.44999694824219,
         "legacy": {
           "commercial": {
             "long": 112864,
@@ -10519,7 +10519,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 376669,
-        "price": 85,
+        "price": 95.625,
         "legacy": {
           "commercial": {
             "long": 111253,
@@ -10559,7 +10559,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 366573,
-        "price": 85,
+        "price": 95.7249984741211,
         "legacy": {
           "commercial": {
             "long": 115362,
@@ -10599,7 +10599,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 371449,
-        "price": 85,
+        "price": 93.67500305175781,
         "legacy": {
           "commercial": {
             "long": 119956,
@@ -10639,7 +10639,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 383680,
-        "price": 85,
+        "price": 86.94999694824219,
         "legacy": {
           "commercial": {
             "long": 118169,
@@ -10681,7 +10681,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 785477,
-        "price": 1.08,
+        "price": 1.1394712924957275,
         "legacy": {
           "commercial": {
             "long": 431837,
@@ -10717,7 +10717,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 894671,
-        "price": 1.08,
+        "price": 1.1479737758636475,
         "legacy": {
           "commercial": {
             "long": 429479,
@@ -10753,7 +10753,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 871507,
-        "price": 1.08,
+        "price": 1.1576753854751587,
         "legacy": {
           "commercial": {
             "long": 511359,
@@ -10789,7 +10789,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 842424,
-        "price": 1.08,
+        "price": 1.1524720191955566,
         "legacy": {
           "commercial": {
             "long": 479684,
@@ -10825,7 +10825,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 824224,
-        "price": 1.08,
+        "price": 1.16604483127594,
         "legacy": {
           "commercial": {
             "long": 469886,
@@ -10861,7 +10861,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 826019,
-        "price": 1.08,
+        "price": 1.1609008312225342,
         "legacy": {
           "commercial": {
             "long": 471453,
@@ -10897,7 +10897,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 829377,
-        "price": 1.08,
+        "price": 1.1623852252960205,
         "legacy": {
           "commercial": {
             "long": 485382,
@@ -10933,7 +10933,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 815942,
-        "price": 1.08,
+        "price": 1.1793843507766724,
         "legacy": {
           "commercial": {
             "long": 480886,
@@ -10969,7 +10969,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 801430,
-        "price": 1.08,
+        "price": 1.1727453470230103,
         "legacy": {
           "commercial": {
             "long": 469715,
@@ -11005,7 +11005,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 790622,
-        "price": 1.08,
+        "price": 1.1724703311920166,
         "legacy": {
           "commercial": {
             "long": 459844,
@@ -11041,7 +11041,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 788828,
-        "price": 1.08,
+        "price": 1.1774401664733887,
         "legacy": {
           "commercial": {
             "long": 465245,
@@ -11077,7 +11077,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 775043,
-        "price": 1.08,
+        "price": 1.1728830337524414,
         "legacy": {
           "commercial": {
             "long": 464746,
@@ -11113,7 +11113,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 774237,
-        "price": 1.08,
+        "price": 1.1522064208984375,
         "legacy": {
           "commercial": {
             "long": 462337,
@@ -11149,7 +11149,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 764691,
-        "price": 1.08,
+        "price": 1.1547343730926514,
         "legacy": {
           "commercial": {
             "long": 444118,
@@ -11185,7 +11185,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 755789,
-        "price": 1.08,
+        "price": 1.1592857837677002,
         "legacy": {
           "commercial": {
             "long": 435130,
@@ -11221,7 +11221,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 969374,
-        "price": 1.08,
+        "price": 1.1469204425811768,
         "legacy": {
           "commercial": {
             "long": 550287,
@@ -11257,7 +11257,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 913289,
-        "price": 1.08,
+        "price": 1.16225004196167,
         "legacy": {
           "commercial": {
             "long": 485713,
@@ -11293,7 +11293,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 911287,
-        "price": 1.08,
+        "price": 1.1818934679031372,
         "legacy": {
           "commercial": {
             "long": 498044,
@@ -11329,7 +11329,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 916813,
-        "price": 1.08,
+        "price": 1.1789672374725342,
         "legacy": {
           "commercial": {
             "long": 487219,
@@ -11365,7 +11365,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 926273,
-        "price": 1.08,
+        "price": 1.1872254610061646,
         "legacy": {
           "commercial": {
             "long": 484603,
@@ -11403,7 +11403,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 297226,
-        "price": 1.28,
+        "price": 1.320199966430664,
         "legacy": {
           "commercial": {
             "long": 232430,
@@ -11439,7 +11439,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 323315,
-        "price": 1.28,
+        "price": 1.3273003101348877,
         "legacy": {
           "commercial": {
             "long": 174844,
@@ -11475,7 +11475,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 291371,
-        "price": 1.28,
+        "price": 1.3410003185272217,
         "legacy": {
           "commercial": {
             "long": 218025,
@@ -11511,7 +11511,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 271147,
-        "price": 1.28,
+        "price": 1.3344007730484009,
         "legacy": {
           "commercial": {
             "long": 182081,
@@ -11547,7 +11547,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 282065,
-        "price": 1.28,
+        "price": 1.3454006910324097,
         "legacy": {
           "commercial": {
             "long": 191611,
@@ -11583,7 +11583,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 285647,
-        "price": 1.28,
+        "price": 1.3441004753112793,
         "legacy": {
           "commercial": {
             "long": 190244,
@@ -11619,7 +11619,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 283643,
-        "price": 1.28,
+        "price": 1.3329992294311523,
         "legacy": {
           "commercial": {
             "long": 169529,
@@ -11655,7 +11655,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 276143,
-        "price": 1.28,
+        "price": 1.363499402999878,
         "legacy": {
           "commercial": {
             "long": 180932,
@@ -11691,7 +11691,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 263635,
-        "price": 1.28,
+        "price": 1.360399842262268,
         "legacy": {
           "commercial": {
             "long": 175790,
@@ -11727,7 +11727,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 263523,
-        "price": 1.28,
+        "price": 1.349700689315796,
         "legacy": {
           "commercial": {
             "long": 172752,
@@ -11763,7 +11763,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 250053,
-        "price": 1.28,
+        "price": 1.3524991273880005,
         "legacy": {
           "commercial": {
             "long": 167315,
@@ -11799,7 +11799,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 244191,
-        "price": 1.28,
+        "price": 1.345599889755249,
         "legacy": {
           "commercial": {
             "long": 172233,
@@ -11835,7 +11835,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 243461,
-        "price": 1.28,
+        "price": 1.3222004175186157,
         "legacy": {
           "commercial": {
             "long": 167652,
@@ -11871,7 +11871,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 238862,
-        "price": 1.28,
+        "price": 1.3327007293701172,
         "legacy": {
           "commercial": {
             "long": 162128,
@@ -11907,7 +11907,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 243434,
-        "price": 1.28,
+        "price": 1.3340002298355103,
         "legacy": {
           "commercial": {
             "long": 170509,
@@ -11943,7 +11943,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 392591,
-        "price": 1.28,
+        "price": 1.3238002061843872,
         "legacy": {
           "commercial": {
             "long": 278523,
@@ -11979,7 +11979,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 269696,
-        "price": 1.28,
+        "price": 1.3408006429672241,
         "legacy": {
           "commercial": {
             "long": 163156,
@@ -12015,7 +12015,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 245891,
-        "price": 1.28,
+        "price": 1.3454006910324097,
         "legacy": {
           "commercial": {
             "long": 135804,
@@ -12051,7 +12051,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 238845,
-        "price": 1.28,
+        "price": 1.3480995893478394,
         "legacy": {
           "commercial": {
             "long": 115022,
@@ -12087,7 +12087,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 227574,
-        "price": 1.28,
+        "price": 1.3621991872787476,
         "legacy": {
           "commercial": {
             "long": 99512,
@@ -12125,7 +12125,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 431030,
-        "price": 0.007,
+        "price": 0.006182762328535318,
         "legacy": {
           "commercial": {
             "long": 252278,
@@ -12161,7 +12161,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 520825,
-        "price": 0.007,
+        "price": 0.006200012750923634,
         "legacy": {
           "commercial": {
             "long": 253831,
@@ -12197,7 +12197,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 505075,
-        "price": 0.007,
+        "price": 0.006241106428205967,
         "legacy": {
           "commercial": {
             "long": 313351,
@@ -12233,7 +12233,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 505555,
-        "price": 0.007,
+        "price": 0.00623865332454443,
         "legacy": {
           "commercial": {
             "long": 312087,
@@ -12269,7 +12269,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 427294,
-        "price": 0.007,
+        "price": 0.006277306471019983,
         "legacy": {
           "commercial": {
             "long": 244888,
@@ -12305,7 +12305,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 396573,
-        "price": 0.007,
+        "price": 0.006281801499426365,
         "legacy": {
           "commercial": {
             "long": 226613,
@@ -12341,7 +12341,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 362042,
-        "price": 0.007,
+        "price": 0.006301951594650745,
         "legacy": {
           "commercial": {
             "long": 203023,
@@ -12377,7 +12377,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 354005,
-        "price": 0.007,
+        "price": 0.006382436025887728,
         "legacy": {
           "commercial": {
             "long": 186544,
@@ -12413,7 +12413,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 372780,
-        "price": 0.007,
+        "price": 0.006366669666022062,
         "legacy": {
           "commercial": {
             "long": 201527,
@@ -12449,7 +12449,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 351782,
-        "price": 0.007,
+        "price": 0.006275100167840719,
         "legacy": {
           "commercial": {
             "long": 188723,
@@ -12485,7 +12485,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 354344,
-        "price": 0.007,
+        "price": 0.006304772570729256,
         "legacy": {
           "commercial": {
             "long": 187189,
@@ -12521,7 +12521,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 349373,
-        "price": 0.007,
+        "price": 0.006279040593653917,
         "legacy": {
           "commercial": {
             "long": 192103,
@@ -12557,7 +12557,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 345276,
-        "price": 0.007,
+        "price": 0.006263740826398134,
         "legacy": {
           "commercial": {
             "long": 185944,
@@ -12593,7 +12593,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 328210,
-        "price": 0.007,
+        "price": 0.006238926202058792,
         "legacy": {
           "commercial": {
             "long": 167443,
@@ -12629,7 +12629,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 326688,
-        "price": 0.007,
+        "price": 0.006279828958213329,
         "legacy": {
           "commercial": {
             "long": 163975,
@@ -12665,7 +12665,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 427718,
-        "price": 0.007,
+        "price": 0.0062605650164186954,
         "legacy": {
           "commercial": {
             "long": 220577,
@@ -12701,7 +12701,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 416977,
-        "price": 0.007,
+        "price": 0.006338340230286121,
         "legacy": {
           "commercial": {
             "long": 186027,
@@ -12737,7 +12737,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 369721,
-        "price": 0.007,
+        "price": 0.006409023888409138,
         "legacy": {
           "commercial": {
             "long": 141918,
@@ -12773,7 +12773,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 354328,
-        "price": 0.007,
+        "price": 0.006450364366173744,
         "legacy": {
           "commercial": {
             "long": 141766,
@@ -12809,7 +12809,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 334948,
-        "price": 0.007,
+        "price": 0.006549646612256765,
         "legacy": {
           "commercial": {
             "long": 136055,
@@ -12847,7 +12847,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 214349,
-        "price": 0.65,
+        "price": 0.6897998452186584,
         "legacy": {
           "commercial": {
             "long": 97086,
@@ -12883,7 +12883,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 295545,
-        "price": 0.65,
+        "price": 0.7011998295783997,
         "legacy": {
           "commercial": {
             "long": 87946,
@@ -12919,7 +12919,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 314177,
-        "price": 0.65,
+        "price": 0.7049998641014099,
         "legacy": {
           "commercial": {
             "long": 172451,
@@ -12955,7 +12955,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 305391,
-        "price": 0.65,
+        "price": 0.7065999507904053,
         "legacy": {
           "commercial": {
             "long": 143693,
@@ -12991,7 +12991,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 302802,
-        "price": 0.65,
+        "price": 0.7203002572059631,
         "legacy": {
           "commercial": {
             "long": 122598,
@@ -13027,7 +13027,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 301269,
-        "price": 0.65,
+        "price": 0.713799774646759,
         "legacy": {
           "commercial": {
             "long": 100426,
@@ -13063,7 +13063,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 289244,
-        "price": 0.65,
+        "price": 0.7150001525878906,
         "legacy": {
           "commercial": {
             "long": 93647,
@@ -13099,7 +13099,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 279532,
-        "price": 0.65,
+        "price": 0.7256999611854553,
         "legacy": {
           "commercial": {
             "long": 92272,
@@ -13135,7 +13135,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 277370,
-        "price": 0.65,
+        "price": 0.7202001214027405,
         "legacy": {
           "commercial": {
             "long": 96356,
@@ -13171,7 +13171,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 275415,
-        "price": 0.65,
+        "price": 0.7136999368667603,
         "legacy": {
           "commercial": {
             "long": 100168,
@@ -13207,7 +13207,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 263918,
-        "price": 0.65,
+        "price": 0.7177205085754395,
         "legacy": {
           "commercial": {
             "long": 88824,
@@ -13243,7 +13243,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 264658,
-        "price": 0.65,
+        "price": 0.7063997387886047,
         "legacy": {
           "commercial": {
             "long": 81872,
@@ -13279,7 +13279,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 263962,
-        "price": 0.65,
+        "price": 0.6906000971794128,
         "legacy": {
           "commercial": {
             "long": 79251,
@@ -13315,7 +13315,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 257694,
-        "price": 0.65,
+        "price": 0.6887000203132629,
         "legacy": {
           "commercial": {
             "long": 80063,
@@ -13351,7 +13351,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 265675,
-        "price": 0.65,
+        "price": 0.7045999765396118,
         "legacy": {
           "commercial": {
             "long": 83769,
@@ -13387,7 +13387,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 315898,
-        "price": 0.65,
+        "price": 0.6990997791290283,
         "legacy": {
           "commercial": {
             "long": 124347,
@@ -13423,7 +13423,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 267280,
-        "price": 0.65,
+        "price": 0.703700065612793,
         "legacy": {
           "commercial": {
             "long": 72991,
@@ -13459,7 +13459,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 248697,
-        "price": 0.65,
+        "price": 0.7107002139091492,
         "legacy": {
           "commercial": {
             "long": 75380,
@@ -13495,7 +13495,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 256213,
-        "price": 0.65,
+        "price": 0.7065000534057617,
         "legacy": {
           "commercial": {
             "long": 82854,
@@ -13531,7 +13531,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 247194,
-        "price": 0.65,
+        "price": 0.7074001431465149,
         "legacy": {
           "commercial": {
             "long": 87293,
@@ -13569,7 +13569,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 342860,
-        "price": 1.35,
+        "price": 1.4186999797821045,
         "legacy": {
           "commercial": {
             "long": 267566,
@@ -13605,7 +13605,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 492468,
-        "price": 1.35,
+        "price": 1.4160000085830688,
         "legacy": {
           "commercial": {
             "long": 420471,
@@ -13641,7 +13641,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 383773,
-        "price": 1.35,
+        "price": 1.3991999626159668,
         "legacy": {
           "commercial": {
             "long": 300856,
@@ -13677,7 +13677,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 305869,
-        "price": 1.35,
+        "price": 1.3932000398635864,
         "legacy": {
           "commercial": {
             "long": 224548,
@@ -13713,7 +13713,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 297944,
-        "price": 1.35,
+        "price": 1.3797999620437622,
         "legacy": {
           "commercial": {
             "long": 195307,
@@ -13749,7 +13749,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 292877,
-        "price": 1.35,
+        "price": 1.3823000192642212,
         "legacy": {
           "commercial": {
             "long": 175009,
@@ -13785,7 +13785,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 251467,
-        "price": 1.35,
+        "price": 1.3753000497817993,
         "legacy": {
           "commercial": {
             "long": 134010,
@@ -13821,7 +13821,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 243793,
-        "price": 1.35,
+        "price": 1.3668999671936035,
         "legacy": {
           "commercial": {
             "long": 134383,
@@ -13857,7 +13857,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 252679,
-        "price": 1.35,
+        "price": 1.3595000505447388,
         "legacy": {
           "commercial": {
             "long": 152035,
@@ -13893,7 +13893,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 255128,
-        "price": 1.35,
+        "price": 1.3675999641418457,
         "legacy": {
           "commercial": {
             "long": 158814,
@@ -13929,7 +13929,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 259258,
-        "price": 1.35,
+        "price": 1.3775999546051025,
         "legacy": {
           "commercial": {
             "long": 165386,
@@ -13965,7 +13965,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 240735,
-        "price": 1.35,
+        "price": 1.3839999437332153,
         "legacy": {
           "commercial": {
             "long": 139988,
@@ -14001,7 +14001,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 217085,
-        "price": 1.35,
+        "price": 1.3945000171661377,
         "legacy": {
           "commercial": {
             "long": 121227,
@@ -14037,7 +14037,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 182798,
-        "price": 1.35,
+        "price": 1.3896000385284424,
         "legacy": {
           "commercial": {
             "long": 80788,
@@ -14073,7 +14073,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 247753,
-        "price": 1.35,
+        "price": 1.3724000453948975,
         "legacy": {
           "commercial": {
             "long": 144314,
@@ -14109,7 +14109,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 288392,
-        "price": 1.35,
+        "price": 1.3805999755859375,
         "legacy": {
           "commercial": {
             "long": 145669,
@@ -14145,7 +14145,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 232433,
-        "price": 1.35,
+        "price": 1.3568999767303467,
         "legacy": {
           "commercial": {
             "long": 101029,
@@ -14181,7 +14181,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 222562,
-        "price": 1.35,
+        "price": 1.3641999959945679,
         "legacy": {
           "commercial": {
             "long": 94074,
@@ -14217,7 +14217,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 218415,
-        "price": 1.35,
+        "price": 1.3681000471115112,
         "legacy": {
           "commercial": {
             "long": 93653,
@@ -14253,7 +14253,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 215037,
-        "price": 1.35,
+        "price": 1.3615000247955322,
         "legacy": {
           "commercial": {
             "long": 95371,
@@ -14291,7 +14291,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 108626,
-        "price": 0.92,
+        "price": 0.8093330264091492,
         "legacy": {
           "commercial": {
             "long": 90828,
@@ -14327,7 +14327,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 145747,
-        "price": 0.92,
+        "price": 0.8043550252914429,
         "legacy": {
           "commercial": {
             "long": 86716,
@@ -14363,7 +14363,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 115412,
-        "price": 0.92,
+        "price": 0.7967039942741394,
         "legacy": {
           "commercial": {
             "long": 94612,
@@ -14399,7 +14399,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 111432,
-        "price": 0.92,
+        "price": 0.7959979772567749,
         "legacy": {
           "commercial": {
             "long": 89813,
@@ -14435,7 +14435,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 105594,
-        "price": 0.92,
+        "price": 0.780896008014679,
         "legacy": {
           "commercial": {
             "long": 87063,
@@ -14471,7 +14471,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 104225,
-        "price": 0.92,
+        "price": 0.784375011920929,
         "legacy": {
           "commercial": {
             "long": 86464,
@@ -14507,7 +14507,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 94743,
-        "price": 0.92,
+        "price": 0.7867349982261658,
         "legacy": {
           "commercial": {
             "long": 77819,
@@ -14543,7 +14543,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 94468,
-        "price": 0.92,
+        "price": 0.7767350077629089,
         "legacy": {
           "commercial": {
             "long": 76076,
@@ -14579,7 +14579,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 94111,
-        "price": 0.92,
+        "price": 0.7810329794883728,
         "legacy": {
           "commercial": {
             "long": 74562,
@@ -14615,7 +14615,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 91532,
-        "price": 0.92,
+        "price": 0.7869290113449097,
         "legacy": {
           "commercial": {
             "long": 71762,
@@ -14651,7 +14651,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 93376,
-        "price": 0.92,
+        "price": 0.7814260125160217,
         "legacy": {
           "commercial": {
             "long": 71984,
@@ -14687,7 +14687,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 86646,
-        "price": 0.92,
+        "price": 0.7889999747276306,
         "legacy": {
           "commercial": {
             "long": 64346,
@@ -14723,7 +14723,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 79740,
-        "price": 0.92,
+        "price": 0.798533022403717,
         "legacy": {
           "commercial": {
             "long": 58243,
@@ -14759,7 +14759,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 76518,
-        "price": 0.92,
+        "price": 0.7947919964790344,
         "legacy": {
           "commercial": {
             "long": 55554,
@@ -14795,7 +14795,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 74101,
-        "price": 0.92,
+        "price": 0.7882149815559387,
         "legacy": {
           "commercial": {
             "long": 53236,
@@ -14831,7 +14831,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 110897,
-        "price": 0.92,
+        "price": 0.7957239747047424,
         "legacy": {
           "commercial": {
             "long": 81996,
@@ -14867,7 +14867,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 105413,
-        "price": 0.92,
+        "price": 0.7763109803199768,
         "legacy": {
           "commercial": {
             "long": 72324,
@@ -14903,7 +14903,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 96835,
-        "price": 0.92,
+        "price": 0.7709349989891052,
         "legacy": {
           "commercial": {
             "long": 66778,
@@ -14939,7 +14939,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 95743,
-        "price": 0.92,
+        "price": 0.7753999829292297,
         "legacy": {
           "commercial": {
             "long": 65773,
@@ -14975,7 +14975,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 95799,
-        "price": 0.92,
+        "price": 0.7692819833755493,
         "legacy": {
           "commercial": {
             "long": 65187,
@@ -15013,7 +15013,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 1980254,
-        "price": 5500,
+        "price": 7401.75,
         "legacy": {
           "commercial": {
             "long": 1444102,
@@ -15049,7 +15049,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 2579920,
-        "price": 5500,
+        "price": 7556.25,
         "legacy": {
           "commercial": {
             "long": 1944552,
@@ -15085,7 +15085,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 2203164,
-        "price": 5500,
+        "price": 7435,
         "legacy": {
           "commercial": {
             "long": 1605755,
@@ -15121,7 +15121,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 2149231,
-        "price": 5500,
+        "price": 7400.5,
         "legacy": {
           "commercial": {
             "long": 1564176,
@@ -15157,7 +15157,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 2093621,
-        "price": 5500,
+        "price": 7595.75,
         "legacy": {
           "commercial": {
             "long": 1532352,
@@ -15193,7 +15193,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 2068443,
-        "price": 5500,
+        "price": 7491,
         "legacy": {
           "commercial": {
             "long": 1494005,
@@ -15229,7 +15229,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 2056229,
-        "price": 5500,
+        "price": 7432.25,
         "legacy": {
           "commercial": {
             "long": 1493830,
@@ -15265,7 +15265,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 1987685,
-        "price": 5500,
+        "price": 7419,
         "legacy": {
           "commercial": {
             "long": 1441704,
@@ -15301,7 +15301,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 1959933,
-        "price": 5500,
+        "price": 7258,
         "legacy": {
           "commercial": {
             "long": 1426842,
@@ -15337,7 +15337,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 1963317,
-        "price": 5500,
+        "price": 7194.75,
         "legacy": {
           "commercial": {
             "long": 1442422,
@@ -15373,7 +15373,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 1959076,
-        "price": 5500,
+        "price": 7161.5,
         "legacy": {
           "commercial": {
             "long": 1448311,
@@ -15409,7 +15409,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 1929090,
-        "price": 5500,
+        "price": 6855.25,
         "legacy": {
           "commercial": {
             "long": 1415196,
@@ -15445,7 +15445,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 1947769,
-        "price": 5500,
+        "price": 6603.75,
         "legacy": {
           "commercial": {
             "long": 1428901,
@@ -15481,7 +15481,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 1879423,
-        "price": 5500,
+        "price": 6412.25,
         "legacy": {
           "commercial": {
             "long": 1391430,
@@ -15517,7 +15517,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 2330659,
-        "price": 5500,
+        "price": 6594.6298828125,
         "legacy": {
           "commercial": {
             "long": 1744037,
@@ -15553,7 +15553,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 1996720,
-        "price": 5500,
+        "price": 6636,
         "legacy": {
           "commercial": {
             "long": 1486880,
@@ -15589,7 +15589,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 2060733,
-        "price": 5500,
+        "price": 6743.75,
         "legacy": {
           "commercial": {
             "long": 1556831,
@@ -15625,7 +15625,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 2017196,
-        "price": 5500,
+        "price": 6889,
         "legacy": {
           "commercial": {
             "long": 1509639,
@@ -15661,7 +15661,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 1966090,
-        "price": 5500,
+        "price": 6923.25,
         "legacy": {
           "commercial": {
             "long": 1449255,
@@ -15697,7 +15697,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 1934958,
-        "price": 5500,
+        "price": 6850.5,
         "legacy": {
           "commercial": {
             "long": 1383208,
@@ -15735,7 +15735,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 276807,
-        "price": 18500,
+        "price": 29368.25,
         "legacy": {
           "commercial": {
             "long": 160038,
@@ -15771,7 +15771,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 375254,
-        "price": 18500,
+        "price": 30647,
         "legacy": {
           "commercial": {
             "long": 186342,
@@ -15807,7 +15807,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 334790,
-        "price": 18500,
+        "price": 29662,
         "legacy": {
           "commercial": {
             "long": 167311,
@@ -15843,7 +15843,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 345837,
-        "price": 18500,
+        "price": 29026.5,
         "legacy": {
           "commercial": {
             "long": 181764,
@@ -15879,7 +15879,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 330617,
-        "price": 18500,
+        "price": 30405.25,
         "legacy": {
           "commercial": {
             "long": 169167,
@@ -15915,7 +15915,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 320044,
-        "price": 18500,
+        "price": 29558.75,
         "legacy": {
           "commercial": {
             "long": 158856,
@@ -15951,7 +15951,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 316227,
-        "price": 18500,
+        "price": 29231.75,
         "legacy": {
           "commercial": {
             "long": 166606,
@@ -15987,7 +15987,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 315421,
-        "price": 18500,
+        "price": 29332.5,
         "legacy": {
           "commercial": {
             "long": 159468,
@@ -16023,7 +16023,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 302430,
-        "price": 18500,
+        "price": 27835.75,
         "legacy": {
           "commercial": {
             "long": 150672,
@@ -16059,7 +16059,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 290216,
-        "price": 18500,
+        "price": 27435,
         "legacy": {
           "commercial": {
             "long": 147270,
@@ -16095,7 +16095,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 276532,
-        "price": 18500,
+        "price": 26825.5,
         "legacy": {
           "commercial": {
             "long": 148134,
@@ -16131,7 +16131,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 258663,
-        "price": 18500,
+        "price": 25281.25,
         "legacy": {
           "commercial": {
             "long": 140869,
@@ -16167,7 +16167,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 256358,
-        "price": 18500,
+        "price": 24129.75,
         "legacy": {
           "commercial": {
             "long": 130999,
@@ -16203,7 +16203,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 244680,
-        "price": 18500,
+        "price": 23328.5,
         "legacy": {
           "commercial": {
             "long": 131317,
@@ -16239,7 +16239,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 318004,
-        "price": 18500,
+        "price": 24291.779296875,
         "legacy": {
           "commercial": {
             "long": 155328,
@@ -16275,7 +16275,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 275311,
-        "price": 18500,
+        "price": 24394.25,
         "legacy": {
           "commercial": {
             "long": 141507,
@@ -16311,7 +16311,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 290391,
-        "price": 18500,
+        "price": 24670.25,
         "legacy": {
           "commercial": {
             "long": 154622,
@@ -16347,7 +16347,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 285165,
-        "price": 18500,
+        "price": 25004.75,
         "legacy": {
           "commercial": {
             "long": 148075,
@@ -16383,7 +16383,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 287390,
-        "price": 18500,
+        "price": 25067.5,
         "legacy": {
           "commercial": {
             "long": 140592,
@@ -16419,7 +16419,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 274666,
-        "price": 18500,
+        "price": 24803.25,
         "legacy": {
           "commercial": {
             "long": 137907,
@@ -16457,7 +16457,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 78956,
-        "price": 38500,
+        "price": 52209,
         "legacy": {
           "commercial": {
             "long": 43613,
@@ -16493,7 +16493,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 103128,
-        "price": 38500,
+        "price": 51888,
         "legacy": {
           "commercial": {
             "long": 62069,
@@ -16529,7 +16529,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 79613,
-        "price": 38500,
+        "price": 51227,
         "legacy": {
           "commercial": {
             "long": 51632,
@@ -16565,7 +16565,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 81760,
-        "price": 38500,
+        "price": 50936,
         "legacy": {
           "commercial": {
             "long": 52720,
@@ -16601,7 +16601,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 81105,
-        "price": 38500,
+        "price": 51077,
         "legacy": {
           "commercial": {
             "long": 55446,
@@ -16637,7 +16637,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 82825,
-        "price": 38500,
+        "price": 50662,
         "legacy": {
           "commercial": {
             "long": 59276,
@@ -16673,7 +16673,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 81940,
-        "price": 38500,
+        "price": 49617,
         "legacy": {
           "commercial": {
             "long": 55390,
@@ -16709,7 +16709,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 78430,
-        "price": 38500,
+        "price": 49691,
         "legacy": {
           "commercial": {
             "long": 51332,
@@ -16745,7 +16745,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 74874,
-        "price": 38500,
+        "price": 49646,
         "legacy": {
           "commercial": {
             "long": 50003,
@@ -16781,7 +16781,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 71200,
-        "price": 38500,
+        "price": 49392,
         "legacy": {
           "commercial": {
             "long": 45833,
@@ -16817,7 +16817,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 68873,
-        "price": 38500,
+        "price": 49641,
         "legacy": {
           "commercial": {
             "long": 46755,
@@ -16853,7 +16853,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 68557,
-        "price": 38500,
+        "price": 48129,
         "legacy": {
           "commercial": {
             "long": 49346,
@@ -16889,7 +16889,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 68213,
-        "price": 38500,
+        "price": 46629,
         "legacy": {
           "commercial": {
             "long": 47050,
@@ -16925,7 +16925,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 67922,
-        "price": 38500,
+        "price": 45424,
         "legacy": {
           "commercial": {
             "long": 48360,
@@ -16961,7 +16961,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 91467,
-        "price": 38500,
+        "price": 45897,
         "legacy": {
           "commercial": {
             "long": 60038,
@@ -16997,7 +16997,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 71187,
-        "price": 38500,
+        "price": 46592,
         "legacy": {
           "commercial": {
             "long": 41767,
@@ -17033,7 +17033,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 71894,
-        "price": 38500,
+        "price": 47517,
         "legacy": {
           "commercial": {
             "long": 38989,
@@ -17069,7 +17069,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 69944,
-        "price": 38500,
+        "price": 49000,
         "legacy": {
           "commercial": {
             "long": 35392,
@@ -17105,7 +17105,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 68377,
-        "price": 38500,
+        "price": 49674,
         "legacy": {
           "commercial": {
             "long": 35032,
@@ -17141,7 +17141,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 72216,
-        "price": 38500,
+        "price": 49569,
         "legacy": {
           "commercial": {
             "long": 36772,
@@ -17179,7 +17179,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 386817,
-        "price": 2050,
+        "price": 3022.60009765625,
         "legacy": {
           "commercial": {
             "long": 293228,
@@ -17215,7 +17215,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 492996,
-        "price": 2050,
+        "price": 2995.60009765625,
         "legacy": {
           "commercial": {
             "long": 352763,
@@ -17251,7 +17251,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 397144,
-        "price": 2050,
+        "price": 2947,
         "legacy": {
           "commercial": {
             "long": 299892,
@@ -17287,7 +17287,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 413739,
-        "price": 2050,
+        "price": 2834.800048828125,
         "legacy": {
           "commercial": {
             "long": 298985,
@@ -17323,7 +17323,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 424698,
-        "price": 2050,
+        "price": 2924.300048828125,
         "legacy": {
           "commercial": {
             "long": 304372,
@@ -17359,7 +17359,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 421242,
-        "price": 2050,
+        "price": 2872.10009765625,
         "legacy": {
           "commercial": {
             "long": 304709,
@@ -17395,7 +17395,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 429290,
-        "price": 2050,
+        "price": 2799.60009765625,
         "legacy": {
           "commercial": {
             "long": 301396,
@@ -17431,7 +17431,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 427367,
-        "price": 2050,
+        "price": 2867.60009765625,
         "legacy": {
           "commercial": {
             "long": 297520,
@@ -17467,7 +17467,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 412001,
-        "price": 2050,
+        "price": 2819.300048828125,
         "legacy": {
           "commercial": {
             "long": 297805,
@@ -17503,7 +17503,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 411435,
-        "price": 2050,
+        "price": 2796.10009765625,
         "legacy": {
           "commercial": {
             "long": 294270,
@@ -17539,7 +17539,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 404501,
-        "price": 2050,
+        "price": 2788.89990234375,
         "legacy": {
           "commercial": {
             "long": 298207,
@@ -17575,7 +17575,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 397438,
-        "price": 2050,
+        "price": 2644.39990234375,
         "legacy": {
           "commercial": {
             "long": 298618,
@@ -17611,7 +17611,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 399456,
-        "price": 2050,
+        "price": 2531.699951171875,
         "legacy": {
           "commercial": {
             "long": 301910,
@@ -17647,7 +17647,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 404533,
-        "price": 2050,
+        "price": 2464,
         "legacy": {
           "commercial": {
             "long": 311270,
@@ -17683,7 +17683,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 481226,
-        "price": 2050,
+        "price": 2496.39990234375,
         "legacy": {
           "commercial": {
             "long": 357689,
@@ -17719,7 +17719,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 402664,
-        "price": 2050,
+        "price": 2480.89990234375,
         "legacy": {
           "commercial": {
             "long": 297684,
@@ -17755,7 +17755,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 401236,
-        "price": 2050,
+        "price": 2526.699951171875,
         "legacy": {
           "commercial": {
             "long": 284812,
@@ -17791,7 +17791,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 396109,
-        "price": 2050,
+        "price": 2634.699951171875,
         "legacy": {
           "commercial": {
             "long": 281670,
@@ -17827,7 +17827,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 392196,
-        "price": 2050,
+        "price": 2668.800048828125,
         "legacy": {
           "commercial": {
             "long": 280124,
@@ -17863,7 +17863,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 408094,
-        "price": 2050,
+        "price": 2653.10009765625,
         "legacy": {
           "commercial": {
             "long": 267324,
@@ -17901,7 +17901,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 353236,
-        "price": 15,
+        "price": 18.40999984741211,
         "legacy": {
           "commercial": {
             "long": 178074,
@@ -17937,7 +17937,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 408302,
-        "price": 15,
+        "price": 16.399999618530273,
         "legacy": {
           "commercial": {
             "long": 202769,
@@ -17973,7 +17973,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 410407,
-        "price": 15,
+        "price": 17.68000030517578,
         "legacy": {
           "commercial": {
             "long": 204993,
@@ -18009,7 +18009,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 410614,
-        "price": 15,
+        "price": 21.510000228881836,
         "legacy": {
           "commercial": {
             "long": 189934,
@@ -18045,7 +18045,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 384562,
-        "price": 15,
+        "price": 15.319999694824219,
         "legacy": {
           "commercial": {
             "long": 174170,
@@ -18081,7 +18081,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 440161,
-        "price": 15,
+        "price": 16.700000762939453,
         "legacy": {
           "commercial": {
             "long": 199578,
@@ -18117,7 +18117,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 403191,
-        "price": 15,
+        "price": 18.43000030517578,
         "legacy": {
           "commercial": {
             "long": 178713,
@@ -18153,7 +18153,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 387090,
-        "price": 15,
+        "price": 17.190000534057617,
         "legacy": {
           "commercial": {
             "long": 152310,
@@ -18189,7 +18189,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 362343,
-        "price": 15,
+        "price": 16.989999771118164,
         "legacy": {
           "commercial": {
             "long": 153254,
@@ -18225,7 +18225,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 338391,
-        "price": 15,
+        "price": 18.709999084472656,
         "legacy": {
           "commercial": {
             "long": 153285,
@@ -18261,7 +18261,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 365168,
-        "price": 15,
+        "price": 17.479999542236328,
         "legacy": {
           "commercial": {
             "long": 160065,
@@ -18297,7 +18297,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 346605,
-        "price": 15,
+        "price": 19.229999542236328,
         "legacy": {
           "commercial": {
             "long": 152225,
@@ -18333,7 +18333,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 348816,
-        "price": 15,
+        "price": 23.8700008392334,
         "legacy": {
           "commercial": {
             "long": 166211,
@@ -18369,7 +18369,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 342684,
-        "price": 15,
+        "price": 31.049999237060547,
         "legacy": {
           "commercial": {
             "long": 161045,
@@ -18405,7 +18405,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 390595,
-        "price": 15,
+        "price": 26.780000686645508,
         "legacy": {
           "commercial": {
             "long": 192043,
@@ -18441,7 +18441,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 388129,
-        "price": 15,
+        "price": 27.190000534057617,
         "legacy": {
           "commercial": {
             "long": 186534,
@@ -18477,7 +18477,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 390306,
-        "price": 15,
+        "price": 29.489999771118164,
         "legacy": {
           "commercial": {
             "long": 191697,
@@ -18513,7 +18513,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 359373,
-        "price": 15,
+        "price": 19.860000610351562,
         "legacy": {
           "commercial": {
             "long": 176421,
@@ -18549,7 +18549,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 373919,
-        "price": 15,
+        "price": 19.09000015258789,
         "legacy": {
           "commercial": {
             "long": 196828,
@@ -18585,7 +18585,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 371911,
-        "price": 15,
+        "price": 20.600000381469727,
         "legacy": {
           "commercial": {
             "long": 185492,
@@ -18623,7 +18623,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 5271748,
-        "price": 110,
+        "price": 110.265625,
         "legacy": {
           "commercial": {
             "long": 4298422,
@@ -18659,7 +18659,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 5324590,
-        "price": 110,
+        "price": 109.328125,
         "legacy": {
           "commercial": {
             "long": 4347629,
@@ -18695,7 +18695,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 5251295,
-        "price": 110,
+        "price": 109.78125,
         "legacy": {
           "commercial": {
             "long": 4222625,
@@ -18731,7 +18731,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 5323279,
-        "price": 110,
+        "price": 109.34375,
         "legacy": {
           "commercial": {
             "long": 4253404,
@@ -18767,7 +18767,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 6254472,
-        "price": 110,
+        "price": 110.078125,
         "legacy": {
           "commercial": {
             "long": 4248016,
@@ -18803,7 +18803,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 5833268,
-        "price": 110,
+        "price": 109.25,
         "legacy": {
           "commercial": {
             "long": 4366133,
@@ -18839,7 +18839,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 5866357,
-        "price": 110,
+        "price": 109.171875,
         "legacy": {
           "commercial": {
             "long": 4184832,
@@ -18875,7 +18875,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 5369025,
-        "price": 110,
+        "price": 110.75,
         "legacy": {
           "commercial": {
             "long": 4158508,
@@ -18911,7 +18911,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 5374513,
-        "price": 110,
+        "price": 110.640625,
         "legacy": {
           "commercial": {
             "long": 4134979,
@@ -18947,7 +18947,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 5213875,
-        "price": 110,
+        "price": 111.21875,
         "legacy": {
           "commercial": {
             "long": 4060023,
@@ -18983,7 +18983,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 5187440,
-        "price": 110,
+        "price": 111.71875,
         "legacy": {
           "commercial": {
             "long": 4031176,
@@ -19019,7 +19019,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 5123122,
-        "price": 110,
+        "price": 111.09375,
         "legacy": {
           "commercial": {
             "long": 4032672,
@@ -19055,7 +19055,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 5152796,
-        "price": 110,
+        "price": 110.75,
         "legacy": {
           "commercial": {
             "long": 4009481,
@@ -19091,7 +19091,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 5163104,
-        "price": 110,
+        "price": 110.15625,
         "legacy": {
           "commercial": {
             "long": 3863211,
@@ -19127,7 +19127,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 5279072,
-        "price": 110,
+        "price": 110.796875,
         "legacy": {
           "commercial": {
             "long": 3971158,
@@ -19163,7 +19163,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 5324068,
-        "price": 110,
+        "price": 111.5625,
         "legacy": {
           "commercial": {
             "long": 4059248,
@@ -19199,7 +19199,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 5466660,
-        "price": 110,
+        "price": 112.5625,
         "legacy": {
           "commercial": {
             "long": 4244872,
@@ -19235,7 +19235,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 5968025,
-        "price": 110,
+        "price": 113.859375,
         "legacy": {
           "commercial": {
             "long": 4423704,
@@ -19271,7 +19271,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 5721555,
-        "price": 110,
+        "price": 112.9375,
         "legacy": {
           "commercial": {
             "long": 4461711,
@@ -19307,7 +19307,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 5500736,
-        "price": 110,
+        "price": 113.171875,
         "legacy": {
           "commercial": {
             "long": 4264172,
@@ -19345,7 +19345,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 1975001,
-        "price": 118,
+        "price": 114.15625,
         "legacy": {
           "commercial": {
             "long": 1506497,
@@ -19381,7 +19381,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 1944182,
-        "price": 118,
+        "price": 112.78125,
         "legacy": {
           "commercial": {
             "long": 1453961,
@@ -19417,7 +19417,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 1881987,
-        "price": 118,
+        "price": 112.875,
         "legacy": {
           "commercial": {
             "long": 1420514,
@@ -19453,7 +19453,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 1875352,
-        "price": 118,
+        "price": 112.25,
         "legacy": {
           "commercial": {
             "long": 1402273,
@@ -19489,7 +19489,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 2004616,
-        "price": 118,
+        "price": 112.71875,
         "legacy": {
           "commercial": {
             "long": 1488410,
@@ -19525,7 +19525,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 1879052,
-        "price": 118,
+        "price": 111.21875,
         "legacy": {
           "commercial": {
             "long": 1427336,
@@ -19561,7 +19561,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 1837021,
-        "price": 118,
+        "price": 110.625,
         "legacy": {
           "commercial": {
             "long": 1397809,
@@ -19597,7 +19597,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 1829774,
-        "price": 118,
+        "price": 113.5625,
         "legacy": {
           "commercial": {
             "long": 1395908,
@@ -19633,7 +19633,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 1800714,
-        "price": 118,
+        "price": 113.09375,
         "legacy": {
           "commercial": {
             "long": 1354124,
@@ -19669,7 +19669,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 1804347,
-        "price": 118,
+        "price": 114,
         "legacy": {
           "commercial": {
             "long": 1354174,
@@ -19705,7 +19705,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 1778844,
-        "price": 118,
+        "price": 114.59375,
         "legacy": {
           "commercial": {
             "long": 1339848,
@@ -19741,7 +19741,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 1786514,
-        "price": 118,
+        "price": 113.78125,
         "legacy": {
           "commercial": {
             "long": 1324620,
@@ -19777,7 +19777,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 1803899,
-        "price": 118,
+        "price": 113.5625,
         "legacy": {
           "commercial": {
             "long": 1323153,
@@ -19813,7 +19813,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 1792430,
-        "price": 118,
+        "price": 112.1875,
         "legacy": {
           "commercial": {
             "long": 1302472,
@@ -19849,7 +19849,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 1791160,
-        "price": 118,
+        "price": 113.3125,
         "legacy": {
           "commercial": {
             "long": 1270220,
@@ -19885,7 +19885,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 1800996,
-        "price": 118,
+        "price": 114.1875,
         "legacy": {
           "commercial": {
             "long": 1265291,
@@ -19921,7 +19921,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 1835511,
-        "price": 118,
+        "price": 116.59375,
         "legacy": {
           "commercial": {
             "long": 1289561,
@@ -19957,7 +19957,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 2036881,
-        "price": 118,
+        "price": 118.875,
         "legacy": {
           "commercial": {
             "long": 1351859,
@@ -19993,7 +19993,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 1837592,
-        "price": 118,
+        "price": 117.40625,
         "legacy": {
           "commercial": {
             "long": 1315962,
@@ -20029,7 +20029,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 1760556,
-        "price": 118,
+        "price": 117.78125,
         "legacy": {
           "commercial": {
             "long": 1290277,
@@ -20067,7 +20067,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 6212973,
-        "price": 108,
+        "price": 107.40625,
         "legacy": {
           "commercial": {
             "long": 5180111,
@@ -20103,7 +20103,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 6207723,
-        "price": 108,
+        "price": 106.9921875,
         "legacy": {
           "commercial": {
             "long": 5174419,
@@ -20139,7 +20139,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 6184688,
-        "price": 108,
+        "price": 107.0625,
         "legacy": {
           "commercial": {
             "long": 5169671,
@@ -20175,7 +20175,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 6302329,
-        "price": 108,
+        "price": 106.7578125,
         "legacy": {
           "commercial": {
             "long": 5210358,
@@ -20211,7 +20211,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 6847723,
-        "price": 108,
+        "price": 107.3203125,
         "legacy": {
           "commercial": {
             "long": 5297812,
@@ -20247,7 +20247,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 6977994,
-        "price": 108,
+        "price": 106.78125,
         "legacy": {
           "commercial": {
             "long": 5418755,
@@ -20283,7 +20283,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 6769315,
-        "price": 108,
+        "price": 106.8125,
         "legacy": {
           "commercial": {
             "long": 5316714,
@@ -20319,7 +20319,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 6620931,
-        "price": 108,
+        "price": 107.8671875,
         "legacy": {
           "commercial": {
             "long": 5331093,
@@ -20355,7 +20355,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 6484836,
-        "price": 108,
+        "price": 107.84375,
         "legacy": {
           "commercial": {
             "long": 5202729,
@@ -20391,7 +20391,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 6497190,
-        "price": 108,
+        "price": 108.28125,
         "legacy": {
           "commercial": {
             "long": 5191123,
@@ -20427,7 +20427,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 6495803,
-        "price": 108,
+        "price": 108.640625,
         "legacy": {
           "commercial": {
             "long": 5258606,
@@ -20463,7 +20463,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 6445179,
-        "price": 108,
+        "price": 108.1796875,
         "legacy": {
           "commercial": {
             "long": 5190375,
@@ -20499,7 +20499,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 6510131,
-        "price": 108,
+        "price": 107.9453125,
         "legacy": {
           "commercial": {
             "long": 5250315,
@@ -20535,7 +20535,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 6569294,
-        "price": 108,
+        "price": 107.6875,
         "legacy": {
           "commercial": {
             "long": 5244682,
@@ -20571,7 +20571,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 6692876,
-        "price": 108,
+        "price": 107.859375,
         "legacy": {
           "commercial": {
             "long": 5390613,
@@ -20607,7 +20607,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 6756942,
-        "price": 108,
+        "price": 108.515625,
         "legacy": {
           "commercial": {
             "long": 5502022,
@@ -20643,7 +20643,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 6769879,
-        "price": 108,
+        "price": 109.1875,
         "legacy": {
           "commercial": {
             "long": 5547849,
@@ -20679,7 +20679,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 7376192,
-        "price": 108,
+        "price": 110.0703125,
         "legacy": {
           "commercial": {
             "long": 5631383,
@@ -20715,7 +20715,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 7431251,
-        "price": 108,
+        "price": 109.4921875,
         "legacy": {
           "commercial": {
             "long": 5943599,
@@ -20751,7 +20751,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 6991253,
-        "price": 108,
+        "price": 109.6875,
         "legacy": {
           "commercial": {
             "long": 5772964,
@@ -20789,7 +20789,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 4536973,
-        "price": 102,
+        "price": 103.23046875,
         "legacy": {
           "commercial": {
             "long": 3490598,
@@ -20825,7 +20825,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 4303653,
-        "price": 102,
+        "price": 103.0703125,
         "legacy": {
           "commercial": {
             "long": 3418344,
@@ -20861,7 +20861,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 4276371,
-        "price": 102,
+        "price": 103.234375,
         "legacy": {
           "commercial": {
             "long": 3376977,
@@ -20897,7 +20897,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 4331344,
-        "price": 102,
+        "price": 103.09765625,
         "legacy": {
           "commercial": {
             "long": 3491157,
@@ -20933,7 +20933,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 4960871,
-        "price": 102,
+        "price": 103.34765625,
         "legacy": {
           "commercial": {
             "long": 3756899,
@@ -20969,7 +20969,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 4938650,
-        "price": 102,
+        "price": 103.125,
         "legacy": {
           "commercial": {
             "long": 3881287,
@@ -21005,7 +21005,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 4796510,
-        "price": 102,
+        "price": 103.203125,
         "legacy": {
           "commercial": {
             "long": 3794813,
@@ -21041,7 +21041,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 4747995,
-        "price": 102,
+        "price": 103.546875,
         "legacy": {
           "commercial": {
             "long": 3820890,
@@ -21077,7 +21077,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 4737135,
-        "price": 102,
+        "price": 103.55859375,
         "legacy": {
           "commercial": {
             "long": 3836874,
@@ -21113,7 +21113,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 4696151,
-        "price": 102,
+        "price": 103.76953125,
         "legacy": {
           "commercial": {
             "long": 3811446,
@@ -21149,7 +21149,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 4697992,
-        "price": 102,
+        "price": 103.91015625,
         "legacy": {
           "commercial": {
             "long": 3812985,
@@ -21185,7 +21185,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 4705605,
-        "price": 102,
+        "price": 103.71875,
         "legacy": {
           "commercial": {
             "long": 3791639,
@@ -21221,7 +21221,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 4722869,
-        "price": 102,
+        "price": 103.62109375,
         "legacy": {
           "commercial": {
             "long": 3787152,
@@ -21257,7 +21257,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 4770492,
-        "price": 102,
+        "price": 103.48046875,
         "legacy": {
           "commercial": {
             "long": 3825356,
@@ -21293,7 +21293,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 4737969,
-        "price": 102,
+        "price": 103.484375,
         "legacy": {
           "commercial": {
             "long": 3645956,
@@ -21329,7 +21329,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 4626984,
-        "price": 102,
+        "price": 103.8046875,
         "legacy": {
           "commercial": {
             "long": 3449223,
@@ -21365,7 +21365,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 4492471,
-        "price": 102,
+        "price": 104.12109375,
         "legacy": {
           "commercial": {
             "long": 3393548,
@@ -21401,7 +21401,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 4642084,
-        "price": 102,
+        "price": 104.46484375,
         "legacy": {
           "commercial": {
             "long": 3441445,
@@ -21437,7 +21437,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 4716741,
-        "price": 102,
+        "price": 104.29296875,
         "legacy": {
           "commercial": {
             "long": 3577502,
@@ -21473,7 +21473,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 4693102,
-        "price": 102,
+        "price": 104.4453125,
         "legacy": {
           "commercial": {
             "long": 3555125,
@@ -21511,7 +21511,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 20554,
-        "price": 62000,
+        "price": 59532.33984375,
         "legacy": {
           "commercial": {
             "long": 70,
@@ -21547,7 +21547,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 21125,
-        "price": 62000,
+        "price": 63237.5390625,
         "legacy": {
           "commercial": {
             "long": 110,
@@ -21583,7 +21583,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 19776,
-        "price": 62000,
+        "price": 65710.3984375,
         "legacy": {
           "commercial": {
             "long": 106,
@@ -21619,7 +21619,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 19882,
-        "price": 62000,
+        "price": 63239.51953125,
         "legacy": {
           "commercial": {
             "long": 184,
@@ -21655,7 +21655,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 21625,
-        "price": 62000,
+        "price": 73579.6875,
         "legacy": {
           "commercial": {
             "long": 212,
@@ -21691,7 +21691,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 23000,
-        "price": 62000,
+        "price": 76981.125,
         "legacy": {
           "commercial": {
             "long": 212,
@@ -21727,7 +21727,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 23535,
-        "price": 62000,
+        "price": 77429.3515625,
         "legacy": {
           "commercial": {
             "long": 227,
@@ -21763,7 +21763,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 23402,
-        "price": 62000,
+        "price": 82138.9296875,
         "legacy": {
           "commercial": {
             "long": 349,
@@ -21799,7 +21799,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 21692,
-        "price": 62000,
+        "price": 78538.2265625,
         "legacy": {
           "commercial": {
             "long": 175,
@@ -21835,7 +21835,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 24994,
-        "price": 62000,
+        "price": 78657.5390625,
         "legacy": {
           "commercial": {
             "long": 194,
@@ -21871,7 +21871,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 23761,
-        "price": 62000,
+        "price": 73856.3515625,
         "legacy": {
           "commercial": {
             "long": 209,
@@ -21907,7 +21907,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 22308,
-        "price": 62000,
+        "price": 70753.40625,
         "legacy": {
           "commercial": {
             "long": 150,
@@ -21943,7 +21943,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 20631,
-        "price": 62000,
+        "price": 68981.8984375,
         "legacy": {
           "commercial": {
             "long": 168,
@@ -21979,7 +21979,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 23268,
-        "price": 62000,
+        "price": 65954.921875,
         "legacy": {
           "commercial": {
             "long": 224,
@@ -22015,7 +22015,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 23807,
-        "price": 62000,
+        "price": 67845.2109375,
         "legacy": {
           "commercial": {
             "long": 379,
@@ -22051,7 +22051,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 21047,
-        "price": 62000,
+        "price": 72789.9140625,
         "legacy": {
           "commercial": {
             "long": 627,
@@ -22087,7 +22087,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 20302,
-        "price": 62000,
+        "price": 65969.78125,
         "legacy": {
           "commercial": {
             "long": 751,
@@ -22123,7 +22123,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 22919,
-        "price": 62000,
+        "price": 65738.1015625,
         "legacy": {
           "commercial": {
             "long": 485,
@@ -22159,7 +22159,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 23335,
-        "price": 62000,
+        "price": 67659.390625,
         "legacy": {
           "commercial": {
             "long": 463,
@@ -22195,7 +22195,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 24157,
-        "price": 62000,
+        "price": 68788.1875,
         "legacy": {
           "commercial": {
             "long": 700,
@@ -22233,7 +22233,7 @@
         "week": "2026-W26",
         "reportDate": "2026-06-23",
         "openInterest": 26007,
-        "price": 3400,
+        "price": 1570.3612060546875,
         "legacy": {
           "commercial": {
             "long": 310,
@@ -22269,7 +22269,7 @@
         "week": "2026-W25",
         "reportDate": "2026-06-16",
         "openInterest": 26110,
-        "price": 3400,
+        "price": 1704.58056640625,
         "legacy": {
           "commercial": {
             "long": 125,
@@ -22305,7 +22305,7 @@
         "week": "2026-W24",
         "reportDate": "2026-06-09",
         "openInterest": 25138,
-        "price": 3400,
+        "price": 1724.61328125,
         "legacy": {
           "commercial": {
             "long": 0,
@@ -22341,7 +22341,7 @@
         "week": "2026-W23",
         "reportDate": "2026-06-02",
         "openInterest": 25516,
-        "price": 3400,
+        "price": 1686.396240234375,
         "legacy": {
           "commercial": {
             "long": 0,
@@ -22377,7 +22377,7 @@
         "week": "2026-W22",
         "reportDate": "2026-05-26",
         "openInterest": 30856,
-        "price": 3400,
+        "price": 2004.341552734375,
         "legacy": {
           "commercial": {
             "long": 209,
@@ -22413,7 +22413,7 @@
         "week": "2026-W21",
         "reportDate": "2026-05-19",
         "openInterest": 33062,
-        "price": 3400,
+        "price": 2097.993896484375,
         "legacy": {
           "commercial": {
             "long": 138,
@@ -22449,7 +22449,7 @@
         "week": "2026-W20",
         "reportDate": "2026-05-12",
         "openInterest": 31749,
-        "price": 3400,
+        "price": 2127.645263671875,
         "legacy": {
           "commercial": {
             "long": 86,
@@ -22485,7 +22485,7 @@
         "week": "2026-W19",
         "reportDate": "2026-05-05",
         "openInterest": 30408,
-        "price": 3400,
+        "price": 2369.0439453125,
         "legacy": {
           "commercial": {
             "long": 1099,
@@ -22521,7 +22521,7 @@
         "week": "2026-W18",
         "reportDate": "2026-04-28",
         "openInterest": 27777,
-        "price": 3400,
+        "price": 2321.6357421875,
         "legacy": {
           "commercial": {
             "long": 485,
@@ -22557,7 +22557,7 @@
         "week": "2026-W17",
         "reportDate": "2026-04-21",
         "openInterest": 31005,
-        "price": 3400,
+        "price": 2369.72900390625,
         "legacy": {
           "commercial": {
             "long": 780,
@@ -22593,7 +22593,7 @@
         "week": "2026-W16",
         "reportDate": "2026-04-14",
         "openInterest": 34354,
-        "price": 3400,
+        "price": 2264.9169921875,
         "legacy": {
           "commercial": {
             "long": 843,
@@ -22629,7 +22629,7 @@
         "week": "2026-W15",
         "reportDate": "2026-04-07",
         "openInterest": 28648,
-        "price": 3400,
+        "price": 2192.201171875,
         "legacy": {
           "commercial": {
             "long": 557,
@@ -22665,7 +22665,7 @@
         "week": "2026-W14",
         "reportDate": "2026-03-31",
         "openInterest": 28463,
-        "price": 3400,
+        "price": 2108.99560546875,
         "legacy": {
           "commercial": {
             "long": 625,
@@ -22701,7 +22701,7 @@
         "week": "2026-W13",
         "reportDate": "2026-03-24",
         "openInterest": 35846,
-        "price": 3400,
+        "price": 1982.5596923828125,
         "legacy": {
           "commercial": {
             "long": 756,
@@ -22737,7 +22737,7 @@
         "week": "2026-W12",
         "reportDate": "2026-03-17",
         "openInterest": 38577,
-        "price": 3400,
+        "price": 2053.04833984375,
         "legacy": {
           "commercial": {
             "long": 594,
@@ -22773,7 +22773,7 @@
         "week": "2026-W11",
         "reportDate": "2026-03-10",
         "openInterest": 35259,
-        "price": 3400,
+        "price": 2177.476318359375,
         "legacy": {
           "commercial": {
             "long": 468,
@@ -22809,7 +22809,7 @@
         "week": "2026-W10",
         "reportDate": "2026-03-03",
         "openInterest": 34357,
-        "price": 3400,
+        "price": 1936.604736328125,
         "legacy": {
           "commercial": {
             "long": 321,
@@ -22845,7 +22845,7 @@
         "week": "2026-W09",
         "reportDate": "2026-02-24",
         "openInterest": 37088,
-        "price": 3400,
+        "price": 1939.066650390625,
         "legacy": {
           "commercial": {
             "long": 188,
@@ -22881,7 +22881,7 @@
         "week": "2026-W08",
         "reportDate": "2026-02-17",
         "openInterest": 33154,
-        "price": 3400,
+        "price": 1957.805908203125,
         "legacy": {
           "commercial": {
             "long": 87,
@@ -22917,7 +22917,7 @@
         "week": "2026-W07",
         "reportDate": "2026-02-10",
         "openInterest": 33814,
-        "price": 3400,
+        "price": 1966.04296875,
         "legacy": {
           "commercial": {
             "long": 117,

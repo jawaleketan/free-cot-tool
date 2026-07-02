@@ -22,15 +22,22 @@ window.addEventListener('error', function suppressNullError(e) {
 });
 
 function initChart(containerId) {
+  const diag = document.getElementById('chart-diag');
   const container = document.getElementById(containerId);
-  if (!container) return false;
+  if (!container) {
+    if (diag) diag.textContent = 'FAIL: container not found';
+    return false;
+  }
 
   if (typeof LightweightCharts === 'undefined') {
-    container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#64748b;font-size:0.85rem">📊 Chart library failed to load — check internet connection and refresh</div>';
+    if (diag) diag.textContent = 'FAIL: LightweightCharts not loaded';
+    container.innerHTML =
+      '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#64748b;font-size:0.85rem">📊 Chart library failed to load — check internet connection and refresh</div>';
     return false;
   }
 
   try {
+    if (diag) diag.textContent = 'Creating chart...';
     chart = LightweightCharts.createChart(container, {
       layout: { background: { color: '#0a0e17' }, textColor: '#94a3b8', fontSize: 11 },
       grid: { vertLines: { color: '#1a2332' }, horzLines: { color: '#1a2332' } },
@@ -42,8 +49,11 @@ function initChart(containerId) {
       height: 400,
     });
 
-    const observer = new ResizeObserver(() => { if (chart) chart.resize(container.clientWidth, 400); });
+    const observer = new ResizeObserver(() => {
+      if (chart) chart.resize(container.clientWidth, 400);
+    });
     observer.observe(container);
+    if (diag) diag.textContent = 'Chart created OK';
     return true;
   } catch (err) {
     console.error('Chart init error:', err);
@@ -64,29 +74,44 @@ function getOrCreateSeries(id, options) {
 }
 
 function setChartData(marketId, reportType) {
-  if (!chart) return;
+  const diag = document.getElementById('chart-diag');
+  if (!chart) {
+    if (diag) diag.textContent = 'CHART: not initialized';
+    return;
+  }
 
   const s1 = getOrCreateSeries('comm', {
-    color: '#22c55e', lineWidth: 2, title: 'Commercials Net',
-    lastValueVisible: true, priceLineVisible: true, priceLineColor: '#22c55e',
+    color: '#22c55e',
+    lineWidth: 2,
+    title: 'Commercials Net',
+    lastValueVisible: true,
+    priceLineVisible: true,
+    priceLineColor: '#22c55e',
   });
   const s2 = getOrCreateSeries('spec', {
-    color: '#ef4444', lineWidth: 2, title: 'Speculators Net',
-    lastValueVisible: true, priceLineVisible: true, priceLineColor: '#ef4444',
+    color: '#ef4444',
+    lineWidth: 2,
+    title: 'Speculators Net',
+    lastValueVisible: true,
+    priceLineVisible: true,
+    priceLineColor: '#ef4444',
   });
   const s3 = getOrCreateSeries('price', {
-    color: '#f59e0b', lineWidth: 1, title: 'Price',
-    lastValueVisible: true, priceLineVisible: false,
+    color: '#f59e0b',
+    lineWidth: 1,
+    title: 'Price',
+    lastValueVisible: true,
+    priceLineVisible: false,
   });
 
   const catData = getChartData(marketId, reportType, 'category') || [];
   const nonCatData = getChartData(marketId, reportType, 'nonCategory') || [];
   const priceData = getPriceHistory(marketId) || [];
 
-  const valid = (data) => data.filter(d =>
-    d && typeof d.time === 'string' && d.time.length === 10 &&
-    typeof d.value === 'number' && isFinite(d.value)
-  );
+  if (diag) diag.textContent = `cat:${catData.length} non:${nonCatData.length} price:${priceData.length}`;
+
+  const valid = (data) =>
+    data.filter((d) => d && typeof d.time === 'number' && typeof d.value === 'number' && isFinite(d.value));
 
   const sets = [
     [s1, valid(catData)],
@@ -94,20 +119,44 @@ function setChartData(marketId, reportType) {
     [s3, valid(priceData)],
   ];
 
+  let ok = 0;
   sets.forEach(([s, data]) => {
     if (!s || data.length === 0) return;
-    try { s.setData(data); } catch (e) { console.warn('Chart setData error:', e?.message); }
+    try {
+      s.setData(data);
+      ok++;
+    } catch (e) {
+      console.warn('Chart setData error:', e?.message);
+    }
   });
 
+  if (diag) diag.textContent += ` | set:${ok}/3`;
+
   // Update labels
-  const catLabels = { legacy: 'Commercials (Hedgers) Net', disaggregated: 'Managed Money Net', tff: 'Asset Manager Net' };
-  const specLabels = { legacy: 'Non-Commercials (Speculators) Net', disaggregated: 'Producer/Merchant Net', tff: 'Dealer Net' };
+  const catLabels = {
+    legacy: 'Commercials (Hedgers) Net',
+    disaggregated: 'Managed Money Net',
+    tff: 'Asset Manager Net',
+  };
+  const specLabels = {
+    legacy: 'Non-Commercials (Speculators) Net',
+    disaggregated: 'Producer/Merchant Net',
+    tff: 'Dealer Net',
+  };
   if (s1) s1.applyOptions({ title: catLabels[reportType] || 'Category Net' });
   if (s2) s2.applyOptions({ title: specLabels[reportType] || 'Other Net' });
 
-  try { chart.timeScale().fitContent(); } catch (e) { /* suppressed */ }
+  try {
+    chart.timeScale().fitContent();
+  } catch (e) {
+    /* suppressed */
+  }
 }
 
 function destroyChart() {
-  if (chart) { chart.remove(); chart = null; series = {}; }
+  if (chart) {
+    chart.remove();
+    chart = null;
+    series = {};
+  }
 }

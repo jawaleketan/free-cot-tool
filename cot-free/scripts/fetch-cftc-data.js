@@ -1,9 +1,9 @@
 /**
  * COT Free — CFTC Data Pipeline
- * 
+ *
  * Downloads COT data from CFTC, parses it, and outputs JSON files for the frontend.
  * Designed to run in GitHub Actions (Node.js 18+) or locally.
- * 
+ *
  * Usage:
  *   node scripts/fetch-cftc-data.js              # Downloads current year
  *   node scripts/fetch-cftc-data.js --year 2026   # Specific year
@@ -21,48 +21,112 @@ const { Readable } = require('stream');
 
 const CFTC_BASE = 'https://www.cftc.gov/files/dea/history';
 const ZIP_URLS = {
-  legacy:        `${CFTC_BASE}/deacot{YEAR}.zip`,
+  legacy: `${CFTC_BASE}/deacot{YEAR}.zip`,
   disaggregated: `${CFTC_BASE}/fut_disagg_txt_{YEAR}.zip`,
-  tff:           `${CFTC_BASE}/fut_fin_txt_{YEAR}.zip`,
+  tff: `${CFTC_BASE}/fut_fin_txt_{YEAR}.zip`,
 };
 
 // Target markets with their CFTC Contract Market Codes
 const TARGET_MARKETS = [
-  { id: 'gold',            symbol: 'GC',  name: 'Gold',                cftcCode: '088691', category: 'Metal' },
-  { id: 'silver',          symbol: 'SI',  name: 'Silver',              cftcCode: '084691', category: 'Metal' },
-  { id: 'crude-oil',       symbol: 'CL',  name: 'Crude Oil (WTI)',     cftcCode: '06765A', category: 'Energy' },
-  { id: 'natural-gas',     symbol: 'NG',  name: 'Natural Gas',         cftcCode: '023651', category: 'Energy' },
-  { id: 'copper',          symbol: 'HG',  name: 'Copper',              cftcCode: '085692', category: 'Metal' },
-  { id: 'corn',            symbol: 'C',   name: 'Corn',                cftcCode: '002602', category: 'Agriculture' },
-  { id: 'wheat',           symbol: 'W',   name: 'Wheat',               cftcCode: '001602', category: 'Agriculture' },
-  { id: 'soybeans',        symbol: 'S',   name: 'Soybeans',            cftcCode: '005602', category: 'Agriculture' },
-  { id: 'coffee',          symbol: 'KC',  name: 'Coffee',              cftcCode: '083731', category: 'Agriculture' },
-  { id: 'sugar',           symbol: 'SB',  name: 'Sugar',               cftcCode: '080732', category: 'Agriculture' },
-  { id: 'cotton',          symbol: 'CT',  name: 'Cotton',              cftcCode: '033661', category: 'Agriculture' },
-  { id: 'live-cattle',     symbol: 'LC',  name: 'Live Cattle',         cftcCode: '057642', category: 'Agriculture' },
-  { id: 'lean-hogs',       symbol: 'LH',  name: 'Lean Hogs',           cftcCode: '054642', category: 'Agriculture' },
-  { id: 'euro-fx',         symbol: '6E',  name: 'Euro FX',             cftcCode: '099741', category: 'Currency' },
-  { id: 'british-pound',   symbol: '6B',  name: 'British Pound',       cftcCode: '096742', category: 'Currency' },
-  { id: 'japanese-yen',    symbol: '6J',  name: 'Japanese Yen',        cftcCode: '097741', category: 'Currency' },  { id: 'australian-dollar', symbol: '6A', name: 'Australian Dollar',    cftcCode: '232741', category: 'Currency' },
-  { id: 'canadian-dollar', symbol: '6C',  name: 'Canadian Dollar',     cftcCode: '090741', category: 'Currency' },
-  { id: 'swiss-franc',     symbol: '6S',  name: 'Swiss Franc',         cftcCode: '092741', category: 'Currency' },
-  { id: 'sp500',           symbol: 'ES',  name: 'S&P 500 E-Mini',      cftcCode: '13874A', category: 'Index' },  { id: 'nasdaq',          symbol: 'NQ',  name: 'Nasdaq 100 E-Mini',    cftcCode: '20974+', category: 'Index' },
-  { id: 'dow-jones',       symbol: 'YM',  name: 'Dow Jones E-Mini',    cftcCode: '124603', category: 'Index' },
-  { id: 'russell2000',     symbol: 'RTY', name: 'Russell 2000 E-Mini', cftcCode: '239742', category: 'Index' },
-  { id: 'vix',             symbol: 'VX',  name: 'VIX',                 cftcCode: '1170E1', category: 'Index' },
-  { id: 'ten-year-note',   symbol: 'ZN',  name: '10-Year T-Note',      cftcCode: '043602', category: 'Rate' },  { id: 'thirty-year-bond', symbol: 'ZB', name: '30-Year T-Bond',       cftcCode: '020601', category: 'Rate' },  { id: 'five-year-note',  symbol: 'ZF',  name: '5-Year T-Note',        cftcCode: '044601', category: 'Rate' },  { id: 'two-year-note',   symbol: 'ZT',  name: '2-Year T-Note',        cftcCode: '042601', category: 'Rate' },  { id: 'bitcoin',         symbol: 'BTC', name: 'Bitcoin',               cftcCode: '133741', category: 'Crypto' },  { id: 'ether',           symbol: 'ETH', name: 'Ether',                 cftcCode: '146021', category: 'Crypto' },
+  { id: 'gold', symbol: 'GC', name: 'Gold', cftcCode: '088691', category: 'Metal' },
+  { id: 'silver', symbol: 'SI', name: 'Silver', cftcCode: '084691', category: 'Metal' },
+  { id: 'crude-oil', symbol: 'CL', name: 'Crude Oil (WTI)', cftcCode: '06765A', category: 'Energy' },
+  { id: 'natural-gas', symbol: 'NG', name: 'Natural Gas', cftcCode: '023651', category: 'Energy' },
+  { id: 'copper', symbol: 'HG', name: 'Copper', cftcCode: '085692', category: 'Metal' },
+  { id: 'corn', symbol: 'C', name: 'Corn', cftcCode: '002602', category: 'Agriculture' },
+  { id: 'wheat', symbol: 'W', name: 'Wheat', cftcCode: '001602', category: 'Agriculture' },
+  { id: 'soybeans', symbol: 'S', name: 'Soybeans', cftcCode: '005602', category: 'Agriculture' },
+  { id: 'coffee', symbol: 'KC', name: 'Coffee', cftcCode: '083731', category: 'Agriculture' },
+  { id: 'sugar', symbol: 'SB', name: 'Sugar', cftcCode: '080732', category: 'Agriculture' },
+  { id: 'cotton', symbol: 'CT', name: 'Cotton', cftcCode: '033661', category: 'Agriculture' },
+  { id: 'live-cattle', symbol: 'LC', name: 'Live Cattle', cftcCode: '057642', category: 'Agriculture' },
+  { id: 'lean-hogs', symbol: 'LH', name: 'Lean Hogs', cftcCode: '054642', category: 'Agriculture' },
+  { id: 'euro-fx', symbol: '6E', name: 'Euro FX', cftcCode: '099741', category: 'Currency' },
+  { id: 'british-pound', symbol: '6B', name: 'British Pound', cftcCode: '096742', category: 'Currency' },
+  { id: 'japanese-yen', symbol: '6J', name: 'Japanese Yen', cftcCode: '097741', category: 'Currency' },
+  { id: 'australian-dollar', symbol: '6A', name: 'Australian Dollar', cftcCode: '232741', category: 'Currency' },
+  { id: 'canadian-dollar', symbol: '6C', name: 'Canadian Dollar', cftcCode: '090741', category: 'Currency' },
+  { id: 'swiss-franc', symbol: '6S', name: 'Swiss Franc', cftcCode: '092741', category: 'Currency' },
+  { id: 'sp500', symbol: 'ES', name: 'S&P 500 E-Mini', cftcCode: '13874A', category: 'Index' },
+  { id: 'nasdaq', symbol: 'NQ', name: 'Nasdaq 100 E-Mini', cftcCode: '20974+', category: 'Index' },
+  { id: 'dow-jones', symbol: 'YM', name: 'Dow Jones E-Mini', cftcCode: '124603', category: 'Index' },
+  { id: 'russell2000', symbol: 'RTY', name: 'Russell 2000 E-Mini', cftcCode: '239742', category: 'Index' },
+  { id: 'vix', symbol: 'VX', name: 'VIX', cftcCode: '1170E1', category: 'Index' },
+  { id: 'ten-year-note', symbol: 'ZN', name: '10-Year T-Note', cftcCode: '043602', category: 'Rate' },
+  { id: 'thirty-year-bond', symbol: 'ZB', name: '30-Year T-Bond', cftcCode: '020601', category: 'Rate' },
+  { id: 'five-year-note', symbol: 'ZF', name: '5-Year T-Note', cftcCode: '044601', category: 'Rate' },
+  { id: 'two-year-note', symbol: 'ZT', name: '2-Year T-Note', cftcCode: '042601', category: 'Rate' },
+  { id: 'bitcoin', symbol: 'BTC', name: 'Bitcoin', cftcCode: '133741', category: 'Crypto' },
+  { id: 'ether', symbol: 'ETH', name: 'Ether', cftcCode: '146021', category: 'Crypto' },
 ];
 
 // Price data (used since CFTC doesn't include prices)
-// Approximate prices as fallback — ideally sourced from Yahoo Finance in a future enhancement
+// Real prices are fetched from Yahoo Finance and merged in; these are used as fallback
 const FALLBACK_PRICES = {
-  gold: 2350, silver: 28, 'crude-oil': 78, 'natural-gas': 2.5, copper: 4.2,
-  corn: 4.5, wheat: 5.5, soybeans: 12, coffee: 2.0, sugar: 0.22, cotton: 0.65,
-  'live-cattle': 185, 'lean-hogs': 85, 'euro-fx': 1.08, 'british-pound': 1.28,
-  'japanese-yen': 0.007, 'australian-dollar': 0.65, 'canadian-dollar': 1.35,
-  'swiss-franc': 0.92, sp500: 5500, nasdaq: 18500, 'dow-jones': 38500,
-  russell2000: 2050, vix: 15, 'ten-year-note': 110, 'thirty-year-bond': 118,
-  'five-year-note': 108, 'two-year-note': 102, bitcoin: 62000, ether: 3400,
+  gold: 2350,
+  silver: 28,
+  'crude-oil': 78,
+  'natural-gas': 2.5,
+  copper: 4.2,
+  corn: 4.5,
+  wheat: 5.5,
+  soybeans: 12,
+  coffee: 2.0,
+  sugar: 0.22,
+  cotton: 0.65,
+  'live-cattle': 185,
+  'lean-hogs': 85,
+  'euro-fx': 1.08,
+  'british-pound': 1.28,
+  'japanese-yen': 0.007,
+  'australian-dollar': 0.65,
+  'canadian-dollar': 1.35,
+  'swiss-franc': 0.92,
+  sp500: 5500,
+  nasdaq: 18500,
+  'dow-jones': 38500,
+  russell2000: 2050,
+  vix: 15,
+  'ten-year-note': 110,
+  'thirty-year-bond': 118,
+  'five-year-note': 108,
+  'two-year-note': 102,
+  bitcoin: 62000,
+  ether: 3400,
+};
+
+// Yahoo Finance symbol mapping for live price data
+const YAHOO_SYMBOLS = {
+  gold: 'GC=F',
+  silver: 'SI=F',
+  'crude-oil': 'CL=F',
+  'natural-gas': 'NG=F',
+  copper: 'HG=F',
+  corn: 'C=F',
+  wheat: 'W=F',
+  soybeans: 'S=F',
+  coffee: 'KC=F',
+  sugar: 'SB=F',
+  cotton: 'CT=F',
+  'live-cattle': 'LE=F',
+  'lean-hogs': 'HE=F',
+  'euro-fx': 'EURUSD=X',
+  'british-pound': 'GBPUSD=X',
+  'japanese-yen': 'JPYUSD=X',
+  'australian-dollar': 'AUDUSD=X',
+  'canadian-dollar': 'USDCAD=X',
+  'swiss-franc': 'USDCHF=X',
+  sp500: 'ES=F',
+  nasdaq: 'NQ=F',
+  'dow-jones': 'YM=F',
+  russell2000: 'RTY=F',
+  vix: '%5EVIX',
+  'ten-year-note': 'ZN=F',
+  'thirty-year-bond': 'ZB=F',
+  'five-year-note': 'ZF=F',
+  'two-year-note': 'ZT=F',
+  bitcoin: 'BTC-USD',
+  ether: 'ETH-USD',
 };
 
 // --- Utilities ---
@@ -70,18 +134,24 @@ const FALLBACK_PRICES = {
 function fetchURL(url) {
   return new Promise((resolve, reject) => {
     const client = url.startsWith('https') ? https : http;
-    client.get(url, { timeout: 60000 }, (res) => {
-      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        return fetchURL(res.headers.location).then(resolve).catch(reject);
-      }
-      if (res.statusCode !== 200) {
-        return reject(new Error(`HTTP ${res.statusCode} for ${url}`));
-      }
-      const chunks = [];
-      res.on('data', (c) => chunks.push(c));
-      res.on('end', () => resolve(Buffer.concat(chunks)));
-      res.on('error', reject);
-    }).on('error', reject).on('timeout', function() { this.destroy(); reject(new Error('Timeout')); });
+    client
+      .get(url, { timeout: 60000 }, (res) => {
+        if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+          return fetchURL(res.headers.location).then(resolve).catch(reject);
+        }
+        if (res.statusCode !== 200) {
+          return reject(new Error(`HTTP ${res.statusCode} for ${url}`));
+        }
+        const chunks = [];
+        res.on('data', (c) => chunks.push(c));
+        res.on('end', () => resolve(Buffer.concat(chunks)));
+        res.on('error', reject);
+      })
+      .on('error', reject)
+      .on('timeout', function () {
+        this.destroy();
+        reject(new Error('Timeout'));
+      });
   });
 }
 
@@ -94,10 +164,9 @@ function extractZipContent(zipBuffer) {
   const zip = zipBuffer;
   let offset = 0;
   const files = [];
-  
+
   while (offset < zip.length - 30) {
-    if (zip[offset] === 0x50 && zip[offset + 1] === 0x4B && 
-        zip[offset + 2] === 0x03 && zip[offset + 3] === 0x04) {
+    if (zip[offset] === 0x50 && zip[offset + 1] === 0x4b && zip[offset + 2] === 0x03 && zip[offset + 3] === 0x04) {
       const compressionMethod = zip.readUInt16LE(offset + 8);
       const compressedSize = zip.readUInt32LE(offset + 18);
       const uncompressedSize = zip.readUInt32LE(offset + 22);
@@ -105,7 +174,7 @@ function extractZipContent(zipBuffer) {
       const extraFieldLength = zip.readUInt16LE(offset + 28);
       const fileName = zip.slice(offset + 30, offset + 30 + fileNameLength).toString('ascii');
       const dataOffset = offset + 30 + fileNameLength + extraFieldLength;
-      
+
       if (compressionMethod === 0) {
         // Stored (uncompressed)
         files.push({ name: fileName, data: zip.slice(dataOffset, dataOffset + uncompressedSize) });
@@ -164,13 +233,13 @@ function safeParseFloat(val) {
 
 // Map CFTC market codes to our market IDs
 function codeToMarketId(cftcCode) {
-  const market = TARGET_MARKETS.find(m => m.cftcCode === cftcCode);
+  const market = TARGET_MARKETS.find((m) => m.cftcCode === cftcCode);
   return market ? market.id : null;
 }
 
 // --- Legacy Parser ---
 function parseLegacyData(csvContent) {
-  const lines = csvContent.split(/\r?\n/).filter(l => l.trim().length > 0);
+  const lines = csvContent.split(/\r?\n/).filter((l) => l.trim().length > 0);
   const marketData = {};
 
   for (const line of lines) {
@@ -213,7 +282,7 @@ function parseLegacyData(csvContent) {
 
 // --- Disaggregated Parser ---
 function parseDisaggregatedData(csvContent) {
-  const lines = csvContent.split(/\r?\n/).filter(l => l.trim().length > 0);
+  const lines = csvContent.split(/\r?\n/).filter((l) => l.trim().length > 0);
   const marketData = {};
 
   for (const line of lines) {
@@ -228,7 +297,7 @@ function parseDisaggregatedData(csvContent) {
     if (!dateStr.match(/^\d{4}-\d{2}-\d{2}$/)) continue;
 
     // Disaggregated columns (exact indices depend on CFTC schema)
-    // Based on documentation: 
+    // Based on documentation:
     // Col 7: OI, 8: ProdMerch Long, 9: ProdMerch Short, 10: ProdMerch Spread,
     // 11: Swap Long, 12: Swap Short, 13: Swap Spread,
     // 14: ManagedMoney Long, 15: ManagedMoney Short, 16: ManagedMoney Spread,
@@ -261,7 +330,7 @@ function parseDisaggregatedData(csvContent) {
 
 // --- TFF Parser ---
 function parseTFFData(csvContent) {
-  const lines = csvContent.split(/\r?\n/).filter(l => l.trim().length > 0);
+  const lines = csvContent.split(/\r?\n/).filter((l) => l.trim().length > 0);
   const marketData = {};
 
   for (const line of lines) {
@@ -311,15 +380,15 @@ function mergeData(legacyData, disaggData, tffData) {
 
     // Collect all unique dates
     const allDates = new Set();
-    legacy.forEach(d => allDates.add(d.date));
-    disagg.forEach(d => allDates.add(d.date));
-    tff.forEach(d => allDates.add(d.date));
+    legacy.forEach((d) => allDates.add(d.date));
+    disagg.forEach((d) => allDates.add(d.date));
+    tff.forEach((d) => allDates.add(d.date));
 
     const dates = Array.from(allDates).sort().reverse();
-    const history = dates.slice(0, 20).map(date => {
-      const l = legacy.find(d => d.date === date);
-      const di = disagg.find(d => d.date === date);
-      const t = tff.find(d => d.date === date);
+    const history = dates.slice(0, 20).map((date) => {
+      const l = legacy.find((d) => d.date === date);
+      const di = disagg.find((d) => d.date === date);
+      const t = tff.find((d) => d.date === date);
 
       // Use OI from any available source
       const oi = l?.openInterest || di?.openInterest || t?.openInterest || 0;
@@ -352,15 +421,112 @@ function dateToWeekStr(dateStr) {
   return `${d.getFullYear()}-W${String(week).padStart(2, '0')}`;
 }
 
+// --- Yahoo Finance Price Fetching ---
+
+function fetchYahooChart(symbol) {
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=1y&interval=1wk`;
+  return new Promise((resolve, reject) => {
+    https
+      .get(
+        url,
+        {
+          headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' },
+          timeout: 15000,
+        },
+        (res) => {
+          let data = '';
+          res.on('data', (chunk) => (data += chunk));
+          res.on('end', () => {
+            try {
+              const json = JSON.parse(data);
+              const result = json.chart?.result?.[0];
+              if (!result) return reject(new Error('No chart result'));
+              const timestamps = result.timestamp || [];
+              const closes = result.indicators?.quote?.[0]?.close || [];
+              const prices = [];
+              for (let i = 0; i < timestamps.length; i++) {
+                if (closes[i] != null) {
+                  prices.push({
+                    date: new Date(timestamps[i] * 1000).toISOString().slice(0, 10),
+                    close: closes[i],
+                  });
+                }
+              }
+              resolve(prices);
+            } catch (e) {
+              reject(e);
+            }
+          });
+        },
+      )
+      .on('error', reject)
+      .on('timeout', function () {
+        this.destroy();
+        reject(new Error('Timeout'));
+      });
+  });
+}
+
+function delay(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+async function fetchAllPrices() {
+  const priceData = {};
+  const entries = Object.entries(YAHOO_SYMBOLS);
+  console.log(`\n📈 Fetching prices from Yahoo Finance for ${entries.length} markets...`);
+
+  for (let i = 0; i < entries.length; i++) {
+    const [marketId, symbol] = entries[i];
+    try {
+      const prices = await fetchYahooChart(symbol);
+      if (prices.length > 0) {
+        priceData[marketId] = prices;
+        console.log(`  [${i + 1}/${entries.length}] ✅ ${marketId} — ${prices.length} weekly prices`);
+      }
+    } catch (err) {
+      console.log(`  [${i + 1}/${entries.length}] ⚠️  ${marketId} — ${err.message}`);
+    }
+    if (i < entries.length - 1) await delay(600);
+  }
+
+  console.log(`\n📈 Fetched prices for ${Object.keys(priceData).length}/${entries.length} markets`);
+  return priceData;
+}
+
+function applyYahooPrices(mergedData, priceData) {
+  let replaced = 0;
+  let total = 0;
+  for (const marketId of Object.keys(mergedData)) {
+    const history = mergedData[marketId];
+    const yahooPrices = priceData[marketId];
+    if (!yahooPrices || yahooPrices.length === 0) continue;
+    for (const entry of history) {
+      total++;
+      const reportMs = new Date(entry.reportDate + 'T00:00:00').getTime();
+      let closest = yahooPrices[0];
+      let closestDiff = Math.abs(new Date(closest.date).getTime() - reportMs);
+      for (const p of yahooPrices) {
+        const diff = Math.abs(new Date(p.date).getTime() - reportMs);
+        if (diff < closestDiff) {
+          closest = p;
+          closestDiff = diff;
+        }
+      }
+      if (closest && Math.abs(new Date(closest.date).getTime() - reportMs) <= 7 * 86400000) {
+        entry.price = closest.close;
+        replaced++;
+      }
+    }
+  }
+  return { replaced, total };
+}
+
 // --- Main ---
 async function main() {
   const args = process.argv.slice(2);
-  const year = args.includes('--year') 
-    ? args[args.indexOf('--year') + 1] 
-    : String(new Date().getFullYear());
-  const outputArg = args.includes('--output')
-    ? args[args.indexOf('--output') + 1]
-    : null;
+  const year = args.includes('--year') ? args[args.indexOf('--year') + 1] : String(new Date().getFullYear());
+  const outputArg = args.includes('--output') ? args[args.indexOf('--output') + 1] : null;
 
   console.log(`📥 Fetching CFTC COT data for year ${year}...`);
 
@@ -375,13 +541,13 @@ async function main() {
   for (const type of reportTypes) {
     const url = ZIP_URLS[type].replace('{YEAR}', year);
     console.log(`  📡 Downloading ${type} from ${url}...`);
-    
+
     try {
       const zipBuffer = await fetchURL(url);
       const files = extractZipContent(zipBuffer);
-      
+
       // Find the first .txt file
-      const txtFile = files.find(f => f.name.endsWith('.txt'));
+      const txtFile = files.find((f) => f.name.endsWith('.txt'));
       if (!txtFile) {
         console.log(`  ⚠️  No text file found in ${type} ZIP`);
         continue;
@@ -397,13 +563,18 @@ async function main() {
   }
 
   // Merge and format
-  const merged = mergeData(
-    results.legacy || {},
-    results.disaggregated || {},
-    results.tff || {}
-  );
+  const merged = mergeData(results.legacy || {}, results.disaggregated || {}, results.tff || {});
 
   console.log(`\n📊 Total markets with data: ${Object.keys(merged).length}`);
+
+  // Fetch real prices from Yahoo Finance
+  const priceData = await fetchAllPrices();
+  if (Object.keys(priceData).length > 0) {
+    const { replaced, total } = applyYahooPrices(merged, priceData);
+    console.log(`💱 Replaced prices for ${replaced}/${total} history entries with Yahoo Finance data`);
+  } else {
+    console.log(`💱 No Yahoo Finance prices fetched — using fallback prices`);
+  }
 
   // Build the output
   const output = {
@@ -412,9 +583,7 @@ async function main() {
       year: year,
       fetchedAt: new Date().toISOString(),
       marketCount: Object.keys(merged).length,
-      weekCounts: Object.fromEntries(
-        Object.entries(merged).map(([id, weeks]) => [id, weeks.length])
-      ),
+      weekCounts: Object.fromEntries(Object.entries(merged).map(([id, weeks]) => [id, weeks.length])),
     },
     markets: TARGET_MARKETS,
     data: merged,
@@ -433,7 +602,7 @@ async function main() {
   console.log(`✅ JS module written to ${jsOutputPath}`);
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error('❌ Fatal error:', err);
   process.exit(1);
 });

@@ -1,0 +1,8 @@
+[build]
+  publish = "cot-free"
+  command = "npm run fetch-data"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
