@@ -37,13 +37,7 @@ The CFTC publishes Commitment of Traders reports every Friday at 3:30 PM ET. A G
 
 ## Deploy
 
-### Netlify
-
-Connect your repo — `netlify.toml` is already configured (publish dir: `cot-free/`).
-
-### GitHub Pages
-
-Push to `master` — the `deploy-pages.yml` workflow handles it.
+Free COT Tool - https://cot-tool.netlify.app
 
 ## License
 
